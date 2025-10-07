@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="PegaOperation"/>
+  <parameter>
+    <name value="dme-right-eye"/>
+    <resource>
+      <Observation>
+        <id value="Bilde1DMEhoyre"/>
+        <meta>
+          <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"/>
+        </meta>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="312912001"/>
+            <display value="Diabetisk makulaødem"/>
+          </coding>
+        </code>
+        <valueBoolean value="true"/>
+        <bodySite>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="5597008"/>
+            <display value="Høyre retina"/>
+          </coding>
+        </bodySite>
+      </Observation>
+    </resource>
+  </parameter>
+  <parameter>
+    <name value="dr-right-eye"/>
+    <resource>
+      <Observation>
+        <id value="Bilde1DRhoyre"/>
+        <meta>
+          <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"/>
+        </meta>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="4855003"/>
+            <display value="Diabetsk retinopati"/>
+          </coding>
+        </code>
+        <valueQuantity>
+          <value value="5"/>
+        </valueQuantity>
+        <bodySite>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="5597008"/>
+            <display value="Høyre retina"/>
+          </coding>
+        </bodySite>
+      </Observation>
+    </resource>
+  </parameter>
+  <parameter>
+    <name value="dme-left-eye"/>
+    <resource>
+      <Observation>
+        <id value="Bilde1DMEvenstre"/>
+        <meta>
+          <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"/>
+        </meta>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="312912001"/>
+            <display value="Diabetisk makulaødem"/>
+          </coding>
+        </code>
+        <valueBoolean value="true"/>
+        <bodySite>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="58443009"/>
+            <display value="Venstre retina"/>
+          </coding>
+        </bodySite>
+      </Observation>
+    </resource>
+  </parameter>
+  <parameter>
+    <name value="dr-left-eye"/>
+    <resource>
+      <Observation>
+        <id value="Bilde1DRvenstre"/>
+        <meta>
+          <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"/>
+        </meta>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="4855003"/>
+            <display value="Diabetsk retinopati"/>
+          </coding>
+        </code>
+        <dataAbsentReason>
+          <coding>
+            <code value="not-asked"/>
+          </coding>
+        </dataAbsentReason>
+        <bodySite>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="58443009"/>
+            <display value="Venstre retina"/>
+          </coding>
+        </bodySite>
+      </Observation>
+    </resource>
+  </parameter>
+  <parameter>
+    <name value="days-until-next-examination"/>
+    <valueInteger value="180"/>
+  </parameter>
+  <parameter>
+    <name value="ki-product-name"/>
+    <valueString value="AwesomeAI for Retina"/>
+  </parameter>
+  <parameter>
+    <name value="ki-version-algorithm"/>
+    <valueString value="v2.1.0"/>
+  </parameter>
+  <parameter>
+    <name value="ki-protocol"/>
+    <valueString value="Standard protocol"/>
+  </parameter>
+  <parameter>
+    <name value="effectiveTime"/>
+    <valueDateTime value="2025-09-30T12:00:00Z"/>
+  </parameter>
+  <parameter>
+    <name value="full-ki-report"/>
+    <valueAttachment>
+      <contentType value="text/json"/>
+      <data value="Base64binary"/>
+      <title value="Full AI report"/>
+    </valueAttachment>
+  </parameter>
+  <parameter>
+    <name value="imageDescriptions"/>
+    <resource>
+      <ImagingStudy>
+        <id value="Bilde1Sectra"/>
+        <status value="available"/>
+        <subject>
+          <identifier>
+            <system value="urn:oid:2.16.578.1.12.4.1.4.1"/>
+            <value value="01015549145"/>
+          </identifier>
+        </subject>
+        <description value="Optic Disc Centered"/>
+      </ImagingStudy>
+    </resource>
+  </parameter>
+  <parameter>
+    <name value="conclusionCode"/>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://helse-sorost.no/fhir/CodeSystem/retina-conclusioncode-cs"/>
+        <code value="1001"/>
+        <display value="Gradering ferdig"/>
+      </coding>
+    </valueCodeableConcept>
+  </parameter>
+</Parameters>

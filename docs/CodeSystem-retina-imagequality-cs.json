@@ -1,0 +1,44 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "retina-imagequality-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem retina-imagequality-cs</b></p><a name=\"retina-imagequality-cs\"> </a><a name=\"hcretina-imagequality-cs\"> </a><p>This  code system <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">2001<a name=\"retina-imagequality-cs-2001\"> </a></td><td>God</td></tr><tr><td style=\"white-space:nowrap\">2002<a name=\"retina-imagequality-cs-2002\"> </a></td><td>Moderat</td></tr><tr><td style=\"white-space:nowrap\">2003<a name=\"retina-imagequality-cs-2003\"> </a></td><td>Ikke graderbar</td></tr><tr><td style=\"white-space:nowrap\">2004<a name=\"retina-imagequality-cs-2004\"> </a></td><td>Mangler</td></tr></table></div>"
+  },
+  "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs",
+  "version" : "0.1.1",
+  "name" : "RetinaImageQualityCodesystem",
+  "title" : "Image Quality CodeSystem for Retinascreening",
+  "status" : "active",
+  "date" : "2025-10-07T21:19:45+02:00",
+  "publisher" : "DIPS AS",
+  "contact" : [{
+    "name" : "DIPS AS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dips.no/"
+    },
+    {
+      "system" : "email",
+      "value" : "teamsolsiden@dips.no"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "2001",
+    "display" : "God"
+  },
+  {
+    "code" : "2002",
+    "display" : "Moderat"
+  },
+  {
+    "code" : "2003",
+    "display" : "Ikke graderbar"
+  },
+  {
+    "code" : "2004",
+    "display" : "Mangler"
+  }]
+}

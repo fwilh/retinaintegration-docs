@@ -1,0 +1,49 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "videre-forlop-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem videre-forlop-cs</b></p><a name=\"videre-forlop-cs\"> </a><a name=\"hcvidere-forlop-cs\"> </a><p>This  code system <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">4001<a name=\"videre-forlop-cs-4001\"> </a></td><td>A</td></tr><tr><td style=\"white-space:nowrap\">4002<a name=\"videre-forlop-cs-4002\"> </a></td><td>B</td></tr><tr><td style=\"white-space:nowrap\">4003<a name=\"videre-forlop-cs-4003\"> </a></td><td>C</td></tr><tr><td style=\"white-space:nowrap\">4004<a name=\"videre-forlop-cs-4004\"> </a></td><td>D</td></tr><tr><td style=\"white-space:nowrap\">4005<a name=\"videre-forlop-cs-4005\"> </a></td><td>E</td></tr></table></div>"
+  },
+  "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs",
+  "version" : "0.1.1",
+  "name" : "VidereForlopCodeSystem",
+  "title" : "Verdisett for videre forløp Retinascreening",
+  "status" : "draft",
+  "date" : "2025-10-07T21:19:45+02:00",
+  "publisher" : "DIPS AS",
+  "contact" : [{
+    "name" : "DIPS AS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dips.no/"
+    },
+    {
+      "system" : "email",
+      "value" : "teamsolsiden@dips.no"
+    }]
+  }],
+  "description" : "Verdisett som beskriver verdier for videre forløp Retinascreening",
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "4001",
+    "display" : "A"
+  },
+  {
+    "code" : "4002",
+    "display" : "B"
+  },
+  {
+    "code" : "4003",
+    "display" : "C"
+  },
+  {
+    "code" : "4004",
+    "display" : "D"
+  },
+  {
+    "code" : "4005",
+    "display" : "E"
+  }]
+}

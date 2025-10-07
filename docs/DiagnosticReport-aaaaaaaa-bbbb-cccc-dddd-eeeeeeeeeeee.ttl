@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://dips.no/fhir/RetinaIntegration/DiagnosticReport/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee> a fhir:DiagnosticReport ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport"^^xsd:anyURI ;
+       fhir:link <http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee</b></p><a name=\"aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee\"> </a><a name=\"hcaaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RetinaDiagnosticReport.html\">DiagnosticReport for Retinascreening</a></p></div><h2><span title=\"Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660 B}\">Bildediagnostikk</span> </h2><table class=\"grid\"><tr><td>Identifiers</td><td> <code>http://dips.no/fhir/NamingSystem/retina-examination-id</code>/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee <code>http://sectra.no/identifiers</code>/MMA94126079</td></tr></table><p><b>Report Details</b></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://dips.no/fhir/NamingSystem/retina-examination-id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee" ]
+  ] [
+     fhir:system [ fhir:v "http://sectra.no/identifiers"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "MMA94126079" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "preliminary"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "B" ] ;
+       fhir:display [ fhir:v "Bildediagnostikk" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="videre-forlop-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem videre-forlop-cs</b></p><a name="videre-forlop-cs"> </a><a name="hcvidere-forlop-cs"> </a><p>This  code system <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">4001<a name="videre-forlop-cs-4001"> </a></td><td>A</td></tr><tr><td style="white-space:nowrap">4002<a name="videre-forlop-cs-4002"> </a></td><td>B</td></tr><tr><td style="white-space:nowrap">4003<a name="videre-forlop-cs-4003"> </a></td><td>C</td></tr><tr><td style="white-space:nowrap">4004<a name="videre-forlop-cs-4004"> </a></td><td>D</td></tr><tr><td style="white-space:nowrap">4005<a name="videre-forlop-cs-4005"> </a></td><td>E</td></tr></table></div>
+  </text>
+  <url value="http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs"/>
+  <version value="0.1.1"/>
+  <name value="VidereForlopCodeSystem"/>
+  <title value="Verdisett for videre forløp Retinascreening"/>
+  <status value="draft"/>
+  <date value="2025-10-07T21:19:45+02:00"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="DIPS AS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dips.no/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="teamsolsiden@dips.no"/>
+    </telecom>
+  </contact>
+  <description value="Verdisett som beskriver verdier for videre forløp Retinascreening"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="4001"/>
+    <display value="A"/>
+  </concept>
+  <concept>
+    <code value="4002"/>
+    <display value="B"/>
+  </concept>
+  <concept>
+    <code value="4003"/>
+    <display value="C"/>
+  </concept>
+  <concept>
+    <code value="4004"/>
+    <display value="D"/>
+  </concept>
+  <concept>
+    <code value="4005"/>
+    <display value="E"/>
+  </concept>
+</CodeSystem>

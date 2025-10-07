@@ -1,3 +1,36 @@
 {
-  "codeSystems" : []
+  "codeSystems" : [
+    {
+      "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "RetinaConclusionCodesystem",
+      "title" : "Kodeverk for konklusjon Retina",
+      "description" : "Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening"
+    },
+    {
+      "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs",
+      "version" : "0.1.1",
+      "status" : "active",
+      "name" : "RetinaImageQualityCodesystem",
+      "title" : "Image Quality CodeSystem for Retinascreening",
+      "description" : ""
+    },
+    {
+      "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "TiltakStatusForrigeUndersokelseCodeSystem",
+      "title" : "Verdisett for tiltaksstatus neste undersøkelse",
+      "description" : "Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening"
+    },
+    {
+      "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "VidereForlopCodeSystem",
+      "title" : "Verdisett for videre forløp Retinascreening",
+      "description" : "Verdisett som beskriver verdier for videre forløp Retinascreening"
+    }
+  ]
 }

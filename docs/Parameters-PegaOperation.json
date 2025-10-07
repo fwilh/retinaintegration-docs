@@ -1,0 +1,167 @@
+{
+  "resourceType" : "Parameters",
+  "id" : "PegaOperation",
+  "parameter" : [{
+    "name" : "dme-right-eye",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Bilde1DMEhoyre",
+      "meta" : {
+        "profile" : ["http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"]
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "312912001",
+          "display" : "Diabetisk makulaødem"
+        }]
+      },
+      "valueBoolean" : true,
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "5597008",
+          "display" : "Høyre retina"
+        }]
+      }
+    }
+  },
+  {
+    "name" : "dr-right-eye",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Bilde1DRhoyre",
+      "meta" : {
+        "profile" : ["http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"]
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "4855003",
+          "display" : "Diabetsk retinopati"
+        }]
+      },
+      "valueQuantity" : {
+        "value" : 5
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "5597008",
+          "display" : "Høyre retina"
+        }]
+      }
+    }
+  },
+  {
+    "name" : "dme-left-eye",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Bilde1DMEvenstre",
+      "meta" : {
+        "profile" : ["http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"]
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "312912001",
+          "display" : "Diabetisk makulaødem"
+        }]
+      },
+      "valueBoolean" : true,
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "58443009",
+          "display" : "Venstre retina"
+        }]
+      }
+    }
+  },
+  {
+    "name" : "dr-left-eye",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Bilde1DRvenstre",
+      "meta" : {
+        "profile" : ["http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"]
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "4855003",
+          "display" : "Diabetsk retinopati"
+        }]
+      },
+      "dataAbsentReason" : {
+        "coding" : [{
+          "code" : "not-asked"
+        }]
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "58443009",
+          "display" : "Venstre retina"
+        }]
+      }
+    }
+  },
+  {
+    "name" : "days-until-next-examination",
+    "valueInteger" : 180
+  },
+  {
+    "name" : "ki-product-name",
+    "valueString" : "AwesomeAI for Retina"
+  },
+  {
+    "name" : "ki-version-algorithm",
+    "valueString" : "v2.1.0"
+  },
+  {
+    "name" : "ki-protocol",
+    "valueString" : "Standard protocol"
+  },
+  {
+    "name" : "effectiveTime",
+    "valueDateTime" : "2025-09-30T12:00:00Z"
+  },
+  {
+    "name" : "full-ki-report",
+    "valueAttachment" : {
+      "contentType" : "text/json",
+      "data" : "Base64binary",
+      "title" : "Full AI report"
+    }
+  },
+  {
+    "name" : "imageDescriptions",
+    "resource" : {
+      "resourceType" : "ImagingStudy",
+      "id" : "Bilde1Sectra",
+      "status" : "available",
+      "subject" : {
+        "identifier" : {
+          "system" : "urn:oid:2.16.578.1.12.4.1.4.1",
+          "value" : "01015549145"
+        }
+      },
+      "description" : "Optic Disc Centered"
+    }
+  },
+  {
+    "name" : "conclusionCode",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://helse-sorost.no/fhir/CodeSystem/retina-conclusioncode-cs",
+        "code" : "1001",
+        "display" : "Gradering ferdig"
+      }]
+    }
+  }]
+}

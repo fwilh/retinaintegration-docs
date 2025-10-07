@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "videre-forlop-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet videre-forlop-vs</b></p><a name=\"videre-forlop-vs\"> </a><a name=\"hcvidere-forlop-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-videre-forlop-cs.html\"><code>http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs</code></a> version <span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\">&#x1F4E6;0.1.1</span></li></ul></div>"
+  },
+  "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/videre-forlop-vs",
+  "version" : "0.1.1",
+  "name" : "VidereForlopValueSet",
+  "title" : "Verdisett for videre forløpsstudie",
+  "status" : "draft",
+  "date" : "2025-10-07T21:19:45+02:00",
+  "publisher" : "DIPS AS",
+  "contact" : [{
+    "name" : "DIPS AS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dips.no/"
+    },
+    {
+      "system" : "email",
+      "value" : "teamsolsiden@dips.no"
+    }]
+  }],
+  "description" : "Verdisett som beskriver videre forløp for Retinascreening.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs"
+    }]
+  }
+}

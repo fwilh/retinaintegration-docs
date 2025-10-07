@@ -11,21 +11,26 @@
   fhir:id [ fhir:v "dips.fhir.retinaintegration"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide dips.fhir.retinaintegration</b></p><a name=\"dips.fhir.retinaintegration\"> </a><a name=\"hcdips.fhir.retinaintegration\"> </a><h2>RetinaIntegrationIG</h2><p>The official URL for this implementation guide is: </p><pre>http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration</pre></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide dips.fhir.retinaintegration</b></p><a name=\"dips.fhir.retinaintegration\"> </a><a name=\"hcdips.fhir.retinaintegration\"> </a><h2>RetinaIntegration</h2><p>The official URL for this implementation guide is: </p><pre>http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration</pre><div><p>RetinaIntegration integrates DIPS EyeCare-Retinopathy with external AI system</p>\n</div></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.0"] ; # 
-  fhir:name [ fhir:v "RetinaIntegrationIG"] ; # 
+  fhir:version [ fhir:v "0.1.1"] ; # 
+  fhir:name [ fhir:v "RetinaIntegration"] ; # 
+  fhir:title [ fhir:v "RetinaIntegration"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-07T15:58:57+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-07T21:19:45+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DIPS AS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DIPS AS" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://dips.no/" ]
+       fhir:value [ fhir:v "http://dips.no/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "teamsolsiden@dips.no" ]
      ] )
   ] ) ; # 
+  fhir:description [ fhir:v "RetinaIntegration integrates DIPS EyeCare-Retinopathy with external AI system"] ; # 
   fhir:packageId [ fhir:v "dips.fhir.retinaintegration"] ; # 
   fhir:license [ fhir:v "CC0-1.0"] ; # 
   fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
@@ -823,15 +828,15 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "StructureDefinition:resource"
+           fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://dips.no/fhir/RetinaIntegration/StructureDefinition/MyPatient> ;
-         fhir:reference [ fhir:v "StructureDefinition/MyPatient" ]
+         fhir:link <http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusioncode-vs> ;
+         fhir:reference [ fhir:v "ValueSet/retina-conclusioncode-vs" ]
        ] ;
-       fhir:name [ fhir:v "MyPatient" ] ;
-       fhir:description [ fhir:v "An example profile of the Patient resource." ] ;
+       fhir:name [ fhir:v "Conclusion Code ValueSet for Retinascreening" ] ;
+       fhir:description [ fhir:v "Allowed conclusion codes for DiagnosticReport" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -841,19 +846,427 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "Patient"
+           fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://dips.no/fhir/RetinaIntegration/Patient/PatientExample> ;
-         fhir:reference [ fhir:v "Patient/PatientExample" ]
+         fhir:link <http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport> ;
+         fhir:reference [ fhir:v "StructureDefinition/RetinaDiagnosticReport" ]
        ] ;
-       fhir:name [ fhir:v "PatientExample" ] ;
-       fhir:description [ fhir:v "An example of a patient with a license to krill." ] ;
+       fhir:name [ fhir:v "DiagnosticReport for Retinascreening" ] ;
+       fhir:description [ fhir:v "This profile can send results from retinascreening" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "OperationDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/OperationDefinition/diagnosticreport-append-retina-ai-result> ;
+         fhir:reference [ fhir:v "OperationDefinition/diagnosticreport-append-retina-ai-result" ]
+       ] ;
+       fhir:name [ fhir:v "DIPSRetinaAppendOperationDefinition" ] ;
+       fhir:description [ fhir:v "OperationDefinition for appending retina AI reults to existing DiagnosticReport" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CapabilityStatement"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/CapabilityStatement/DIPSRetinaCapabilityStatement> ;
+         fhir:reference [ fhir:v "CapabilityStatement/DIPSRetinaCapabilityStatement" ]
+       ] ;
+       fhir:name [ fhir:v "DIPSRetinaCapabilityStatement" ] ;
+       fhir:description [ fhir:v "CapabilityStatement for DIPS Retinaflyt" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/StructureDefinition/frist-nesteundersokelse-extension> ;
+         fhir:reference [ fhir:v "StructureDefinition/frist-nesteundersokelse-extension" ]
+       ] ;
+       fhir:name [ fhir:v "Frist neste undersøkelse" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-imagequality-extension> ;
+         fhir:reference [ fhir:v "StructureDefinition/retina-imagequality-extension" ]
+       ] ;
+       fhir:name [ fhir:v "Image Quality" ] ;
+       fhir:description [ fhir:v "A coded extension representing the quality of a diagnostic image" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/retina-imagequality-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Image Quality CodeSystem for Retinascreening" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imagequality-vs> ;
+         fhir:reference [ fhir:v "ValueSet/retina-imagequality-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Image Quality ValueSet for Retinascreening" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-productname-extension> ;
+         fhir:reference [ fhir:v "StructureDefinition/ki-productname-extension" ]
+       ] ;
+       fhir:name [ fhir:v "KI Product Name ekstensjon" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-protokoll-extension> ;
+         fhir:reference [ fhir:v "StructureDefinition/ki-protokoll-extension" ]
+       ] ;
+       fhir:name [ fhir:v "KI protokoll extensjon" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-versjon-algoritme-extension> ;
+         fhir:reference [ fhir:v "StructureDefinition/ki-versjon-algoritme-extension" ]
+       ] ;
+       fhir:name [ fhir:v "KI versjon algoritme extensjon" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/retina-conclusioncode-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Kodeverk for konklusjon Retina" ] ;
+       fhir:description [ fhir:v "Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "DiagnosticReport"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/DiagnosticReport/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee> ;
+         fhir:reference [ fhir:v "DiagnosticReport/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee" ]
+       ] ;
+       fhir:name [ fhir:v "NotificationFromDIPS-Example" ] ;
+       fhir:description [ fhir:v "Notifikasjon fra DIPS" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/MyPatient"^^xsd:anyURI ;
-         fhir:link <http://dips.no/fhir/RetinaIntegration/StructureDefinition/MyPatient>
+         fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport"^^xsd:anyURI ;
+         fhir:link <http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation> ;
+         fhir:reference [ fhir:v "StructureDefinition/RetinaObservation" ]
+       ] ;
+       fhir:name [ fhir:v "Observation for Retinascreening" ] ;
+       fhir:description [ fhir:v "This is observations connected to RetinaDiagnosticReport" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Parameters"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/Parameters/PegaOperation> ;
+         fhir:reference [ fhir:v "Parameters/PegaOperation" ]
+       ] ;
+       fhir:name [ fhir:v "PegaOperation" ] ;
+       fhir:description [ fhir:v "Example request from Pega to append AI results to existing DiagnosticReport" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Bundle"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/Bundle/QueryResponseForExaminationsBetweenTwoDatesNoAI-Example> ;
+         fhir:reference [ fhir:v "Bundle/QueryResponseForExaminationsBetweenTwoDatesNoAI-Example" ]
+       ] ;
+       fhir:name [ fhir:v "QueryResponseForExaminationsBetweenTwoDatesNoAI-Example" ] ;
+       fhir:description [ fhir:v "Result of query for xaminations bwetween two dates, not containing AI result. Note: The resource references in this example are not correct." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Bundle"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/Bundle/QueryResponseForSpecificExaminationNoAI-Example> ;
+         fhir:reference [ fhir:v "Bundle/QueryResponseForSpecificExaminationNoAI-Example" ]
+       ] ;
+       fhir:name [ fhir:v "QueryResponseForSpecificExaminationNoAI-Example" ] ;
+       fhir:description [ fhir:v "Result of query for a specific examination idfentified by ID containing no AI result." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Bundle"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/Bundle/QueryResponseWithSingleExaminationAndAI-Example> ;
+         fhir:reference [ fhir:v "Bundle/QueryResponseWithSingleExaminationAndAI-Example" ]
+       ] ;
+       fhir:name [ fhir:v "QueryResponseWithSingleExaminationAndAI-Example" ] ;
+       fhir:description [ fhir:v "Example response containing a single diagnostic report containing AI result." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/ValueSet/diagnosticreport-codes-vs> ;
+         fhir:reference [ fhir:v "ValueSet/diagnosticreport-codes-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Rapport for Retina-screening" ] ;
+       fhir:description [ fhir:v "Rapporttype bildediagnsotikk fra Volven 8660" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/StructureDefinition/tiltaksstatus-forrige-undersokelse-extension> ;
+         fhir:reference [ fhir:v "StructureDefinition/tiltaksstatus-forrige-undersokelse-extension" ]
+       ] ;
+       fhir:name [ fhir:v "Titaksstaus forrige undersøkelse Retina" ] ;
+       fhir:description [ fhir:v "Angir om et tiltak er primært eller sekundært" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/ValueSet/tiltaksstatus-forrigeUndersokelse-vs> ;
+         fhir:reference [ fhir:v "ValueSet/tiltaksstatus-forrigeUndersokelse-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Verdisett for tiltaksstatus neste undersøkelse" ] ;
+       fhir:description [ fhir:v "Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/tiltakstatus-nesteundersokelse-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Verdisett for tiltaksstatus neste undersøkelse" ] ;
+       fhir:description [ fhir:v "Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/videre-forlop-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Verdisett for videre forløp Retinascreening" ] ;
+       fhir:description [ fhir:v "Verdisett som beskriver verdier for videre forløp Retinascreening" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/ValueSet/videre-forlop-vs> ;
+         fhir:reference [ fhir:v "ValueSet/videre-forlop-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Verdisett for videre forløpsstudie" ] ;
+       fhir:description [ fhir:v "Verdisett som beskriver videre forløp for Retinascreening." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension> ;
+         fhir:reference [ fhir:v "StructureDefinition/videre-forlop-extension" ]
+       ] ;
+       fhir:name [ fhir:v "Videre forløpsstudie Retina" ] ;
+       fhir:description [ fhir:v "Angir videre forløp" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
        ]
      ] ) ;
      fhir:page [

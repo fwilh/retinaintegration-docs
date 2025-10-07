@@ -1,9 +1,436 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="825dcf6f-e793-4234-a014-62b11e68dc74"/>
+  <id value="bef3f838-a942-48aa-892a-ccb4a2536e6b"/>
   <meta>
-    <lastUpdated value="2025-10-07T15:59:31.006+02:00"/>
+    <lastUpdated value="2025-10-07T21:20:21.484+02:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusioncode-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-retina-conclusioncode-cs.html">codesystem Kodeverk for konklusjon Retina v0.1.1 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs-1001"> </a>  
+                  <a href="CodeSystem-retina-conclusioncode-cs.html#retina-conclusioncode-cs-1001">1001</a>
+                </td>
+                <td>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs</td>
+                <td>Gradering ferdig</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs-1002"> </a>  
+                  <a href="CodeSystem-retina-conclusioncode-cs.html#retina-conclusioncode-cs-1002">1002</a>
+                </td>
+                <td>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs</td>
+                <td>Til primærgradering</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs-1003"> </a>  
+                  <a href="CodeSystem-retina-conclusioncode-cs.html#retina-conclusioncode-cs-1003">1003</a>
+                </td>
+                <td>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs</td>
+                <td>Til sekundærgradering</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusioncode-vs"/>
+        <version value="0.1.1"/>
+        <name value="RetinaConclusionCodeValueset"/>
+        <title value="Conclusion Code ValueSet for Retinascreening"/>
+        <status value="draft"/>
+        <date value="2025-10-07T21:19:45+02:00"/>
+        <expansion>
+          <identifier value="urn:uuid:8d2751ac-1db8-48ec-8ce1-e5d7cf5fff55"/>
+          <timestamp value="2025-10-07T21:20:46+02:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs|0.1.1"/>
+          </parameter>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs"/>
+            <code value="1001"/>
+            <display value="Gradering ferdig"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs"/>
+            <code value="1002"/>
+            <display value="Til primærgradering"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs"/>
+            <code value="1003"/>
+            <display value="Til sekundærgradering"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imagequality-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-retina-imagequality-cs.html">codesystem Image Quality CodeSystem for Retinascreening v0.1.1 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs-2001"> </a>  
+                  <a href="CodeSystem-retina-imagequality-cs.html#retina-imagequality-cs-2001">2001</a>
+                </td>
+                <td>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs</td>
+                <td>God</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs-2002"> </a>  
+                  <a href="CodeSystem-retina-imagequality-cs.html#retina-imagequality-cs-2002">2002</a>
+                </td>
+                <td>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs</td>
+                <td>Moderat</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs-2003"> </a>  
+                  <a href="CodeSystem-retina-imagequality-cs.html#retina-imagequality-cs-2003">2003</a>
+                </td>
+                <td>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs</td>
+                <td>Ikke graderbar</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs-2004"> </a>  
+                  <a href="CodeSystem-retina-imagequality-cs.html#retina-imagequality-cs-2004">2004</a>
+                </td>
+                <td>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs</td>
+                <td>Mangler</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imagequality-vs"/>
+        <version value="0.1.1"/>
+        <name value="RetinaImageQualityValueSet"/>
+        <title value="Image Quality ValueSet for Retinascreening"/>
+        <status value="draft"/>
+        <date value="2025-10-07T21:19:45+02:00"/>
+        <expansion>
+          <identifier value="urn:uuid:72c82b88-4fcc-4fef-b325-c51356999c21"/>
+          <timestamp value="2025-10-07T21:20:46+02:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs|0.1.1"/>
+          </parameter>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs"/>
+            <code value="2001"/>
+            <display value="God"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs"/>
+            <code value="2002"/>
+            <display value="Moderat"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs"/>
+            <code value="2003"/>
+            <display value="Ikke graderbar"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs"/>
+            <code value="2004"/>
+            <display value="Mangler"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://dips.no/fhir/RetinaIntegration/ValueSet/tiltaksstatus-forrigeUndersokelse-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-tiltakstatus-nesteundersokelse-cs.html">codesystem Verdisett for tiltaksstatus neste undersøkelse v0.1.1 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs-3001"> </a>  
+                  <a href="CodeSystem-tiltakstatus-nesteundersokelse-cs.html#tiltakstatus-nesteundersokelse-cs-3001">3001</a>
+                </td>
+                <td>http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs</td>
+                <td>Ny fotokontroll (primærgradering)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs-3002"> </a>  
+                  <a href="CodeSystem-tiltakstatus-nesteundersokelse-cs.html#tiltakstatus-nesteundersokelse-cs-3002">3002</a>
+                </td>
+                <td>http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs</td>
+                <td>Ny fotokontroll (sekundærgradering)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs-3003"> </a>  
+                  <a href="CodeSystem-tiltakstatus-nesteundersokelse-cs.html#tiltakstatus-nesteundersokelse-cs-3003">3003</a>
+                </td>
+                <td>http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs</td>
+                <td>Ingen registrert tidligere undersøkelser</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://dips.no/fhir/RetinaIntegration/ValueSet/tiltaksstatus-forrigeUndersokelse-vs"/>
+        <version value="0.1.1"/>
+        <name value="TiltaksstatusForrigeUndersokelseValueSet"/>
+        <title value="Verdisett for tiltaksstatus neste undersøkelse"/>
+        <status value="draft"/>
+        <date value="2025-10-07T21:19:45+02:00"/>
+        <expansion>
+          <identifier value="urn:uuid:4101a49b-fc98-43b0-a8ae-4c0c4c368d7a"/>
+          <timestamp value="2025-10-07T21:20:47+02:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs|0.1.1"/>
+          </parameter>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs"/>
+            <code value="3001"/>
+            <display value="Ny fotokontroll (primærgradering)"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs"/>
+            <code value="3002"/>
+            <display value="Ny fotokontroll (sekundærgradering)"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs"/>
+            <code value="3003"/>
+            <display value="Ingen registrert tidligere undersøkelser"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://dips.no/fhir/RetinaIntegration/ValueSet/videre-forlop-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-videre-forlop-cs.html">codesystem Verdisett for videre forløp Retinascreening v0.1.1 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs-4001"> </a>  
+                  <a href="CodeSystem-videre-forlop-cs.html#videre-forlop-cs-4001">4001</a>
+                </td>
+                <td>http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs-4002"> </a>  
+                  <a href="CodeSystem-videre-forlop-cs.html#videre-forlop-cs-4002">4002</a>
+                </td>
+                <td>http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs</td>
+                <td>B</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs-4003"> </a>  
+                  <a href="CodeSystem-videre-forlop-cs.html#videre-forlop-cs-4003">4003</a>
+                </td>
+                <td>http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs-4004"> </a>  
+                  <a href="CodeSystem-videre-forlop-cs.html#videre-forlop-cs-4004">4004</a>
+                </td>
+                <td>http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs</td>
+                <td>D</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs-4005"> </a>  
+                  <a href="CodeSystem-videre-forlop-cs.html#videre-forlop-cs-4005">4005</a>
+                </td>
+                <td>http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs</td>
+                <td>E</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://dips.no/fhir/RetinaIntegration/ValueSet/videre-forlop-vs"/>
+        <version value="0.1.1"/>
+        <name value="VidereForlopValueSet"/>
+        <title value="Verdisett for videre forløpsstudie"/>
+        <status value="draft"/>
+        <date value="2025-10-07T21:19:45+02:00"/>
+        <expansion>
+          <identifier value="urn:uuid:ae119622-a4b6-4b42-8008-74157909b866"/>
+          <timestamp value="2025-10-07T21:20:47+02:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs|0.1.1"/>
+          </parameter>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs"/>
+            <code value="4001"/>
+            <display value="A"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs"/>
+            <code value="4002"/>
+            <display value="B"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs"/>
+            <code value="4003"/>
+            <display value="C"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs"/>
+            <code value="4004"/>
+            <display value="D"/>
+          </contains>
+          <contains>
+            <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs"/>
+            <code value="4005"/>
+            <display value="E"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
 </Bundle>

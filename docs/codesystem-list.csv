@@ -1,1 +1,5 @@
 URL,Version,Status,OIDs,Name,Title,Description,Used
+http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs,0.1.1,draft,,RetinaConclusionCodesystem,Kodeverk for konklusjon Retina,"Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening",
+http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs,0.1.1,active,,RetinaImageQualityCodesystem,Image Quality CodeSystem for Retinascreening,"",
+http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs,0.1.1,draft,,TiltakStatusForrigeUndersokelseCodeSystem,Verdisett for tiltaksstatus neste undersøkelse,"Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening",
+http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs,0.1.1,draft,,VidereForlopCodeSystem,Verdisett for videre forløp Retinascreening,"Verdisett som beskriver verdier for videre forløp Retinascreening",

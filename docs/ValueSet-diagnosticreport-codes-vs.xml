@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="diagnosticreport-codes-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet diagnosticreport-codes-vs</b></p><a name="diagnosticreport-codes-vs"> </a><a name="hcdiagnosticreport-codes-vs"> </a><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660</code> version <span title="Version is not explicity stated. No matching Code System found">Not Stated (use latest from terminology server)</span></li></ul></div>
+  </text>
+  <url value="http://dips.no/fhir/RetinaIntegration/ValueSet/diagnosticreport-codes-vs"/>
+  <version value="0.1.1"/>
+  <name value="DiagnosticReportCodes"/>
+  <title value="Rapport for Retina-screening"/>
+  <status value="draft"/>
+  <date value="2025-10-07T21:19:45+02:00"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="DIPS AS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dips.no/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="teamsolsiden@dips.no"/>
+    </telecom>
+  </contact>
+  <description value="Rapporttype bildediagnsotikk fra Volven 8660"/>
+  <compose>
+    <include>
+      <system value="http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660"/>
+    </include>
+  </compose>
+</ValueSet>

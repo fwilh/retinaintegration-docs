@@ -1,17 +1,99 @@
 {
   "package": "dips.fhir.retinaintegration",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "fhirVersion": "4.0.1",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/frist-nesteundersokelse-extension",
+      "title": "Frist neste undersøkelse",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-productname-extension",
+      "title": "KI Product Name ekstensjon",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-protokoll-extension",
+      "title": "KI protokoll extensjon",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-versjon-algoritme-extension",
+      "title": "KI versjon algoritme extensjon",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-imagequality-extension",
+      "title": "Image Quality",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/tiltaksstatus-forrige-undersokelse-extension",
+      "title": "Titaksstaus forrige undersøkelse Retina",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension",
+      "title": "Videre forløpsstudie Retina",
+      "types": [
+        "CodeableConcept"
+      ]
+    }
+  ],
   "profiles": {
-    "Patient": [
+    "DiagnosticReport": [
       {
-        "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/MyPatient",
-        "title": "MyPatient"
+        "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport",
+        "title": "DiagnosticReport for Retinascreening"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation",
+        "title": "Observation for Retinascreening"
       }
     ]
   },
   "usage": {
+    "http://dips.no/fhir/RetinaIntegration/StructureDefinition/frist-nesteundersokelse-extension": [
+      "Bundle.entry.resource",
+      "DiagnosticReport"
+    ],
+    "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-productname-extension": [
+      "Bundle.entry.resource",
+      "DiagnosticReport"
+    ],
+    "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-protokoll-extension": [
+      "Bundle.entry.resource",
+      "DiagnosticReport"
+    ],
+    "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-versjon-algoritme-extension": [
+      "Bundle.entry.resource",
+      "DiagnosticReport"
+    ],
+    "http://dips.no/fhir/RetinaIntegration/StructureDefinition/retina-imagequality-extension": [
+      "DiagnosticReport"
+    ],
+    "http://dips.no/fhir/RetinaIntegration/StructureDefinition/tiltaksstatus-forrige-undersokelse-extension": [
+      "Bundle.entry.resource",
+      "DiagnosticReport"
+    ],
+    "http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension": [
+      "Bundle.entry.resource"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -24,10 +106,10 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
-      "StructureDefinition.snapshot.element.type"
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [

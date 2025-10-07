@@ -3,21 +3,28 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="dips.fhir.retinaintegration"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide dips.fhir.retinaintegration</b></p><a name="dips.fhir.retinaintegration"> </a><a name="hcdips.fhir.retinaintegration"> </a><h2>RetinaIntegrationIG</h2><p>The official URL for this implementation guide is: </p><pre>http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide dips.fhir.retinaintegration</b></p><a name="dips.fhir.retinaintegration"> </a><a name="hcdips.fhir.retinaintegration"> </a><h2>RetinaIntegration</h2><p>The official URL for this implementation guide is: </p><pre>http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration</pre><div><p>RetinaIntegration integrates DIPS EyeCare-Retinopathy with external AI system</p>
+</div></div>
   </text>
   <url value="http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration"/>
-  <version value="0.1.0"/>
-  <name value="RetinaIntegrationIG"/>
+  <version value="0.1.1"/>
+  <name value="RetinaIntegration"/>
+  <title value="RetinaIntegration"/>
   <status value="draft"/>
-  <date value="2025-10-07T15:58:57+02:00"/>
+  <date value="2025-10-07T21:19:45+02:00"/>
   <publisher value="DIPS AS"/>
   <contact>
     <name value="DIPS AS"/>
     <telecom>
       <system value="url"/>
-      <value value="https://dips.no/"/>
+      <value value="http://dips.no/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="teamsolsiden@dips.no"/>
     </telecom>
   </contact>
+  <description value="RetinaIntegration integrates DIPS EyeCare-Retinopathy with external AI system"/>
   <packageId value="dips.fhir.retinaintegration"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -443,25 +450,272 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/MyPatient"/>
+        <reference value="ValueSet/retina-conclusioncode-vs"/>
       </reference>
-      <name value="MyPatient"/>
-      <description value="An example profile of the Patient resource."/>
+      <name value="Conclusion Code ValueSet for Retinascreening"/>
+      <description value="Allowed conclusion codes for DiagnosticReport"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="Patient/PatientExample"/>
+        <reference value="StructureDefinition/RetinaDiagnosticReport"/>
       </reference>
-      <name value="PatientExample"/>
-      <description value="An example of a patient with a license to krill."/>
-      <exampleCanonical value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/MyPatient"/>
+      <name value="DiagnosticReport for Retinascreening"/>
+      <description value="This profile can send results from retinascreening"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/diagnosticreport-append-retina-ai-result"/>
+      </reference>
+      <name value="DIPSRetinaAppendOperationDefinition"/>
+      <description value="OperationDefinition for appending retina AI reults to existing DiagnosticReport"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/DIPSRetinaCapabilityStatement"/>
+      </reference>
+      <name value="DIPSRetinaCapabilityStatement"/>
+      <description value="CapabilityStatement for DIPS Retinaflyt"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/frist-nesteundersokelse-extension"/>
+      </reference>
+      <name value="Frist neste undersøkelse"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/retina-imagequality-extension"/>
+      </reference>
+      <name value="Image Quality"/>
+      <description value="A coded extension representing the quality of a diagnostic image"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/retina-imagequality-cs"/>
+      </reference>
+      <name value="Image Quality CodeSystem for Retinascreening"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/retina-imagequality-vs"/>
+      </reference>
+      <name value="Image Quality ValueSet for Retinascreening"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ki-productname-extension"/>
+      </reference>
+      <name value="KI Product Name ekstensjon"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ki-protokoll-extension"/>
+      </reference>
+      <name value="KI protokoll extensjon"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ki-versjon-algoritme-extension"/>
+      </reference>
+      <name value="KI versjon algoritme extensjon"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/retina-conclusioncode-cs"/>
+      </reference>
+      <name value="Kodeverk for konklusjon Retina"/>
+      <description value="Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"/>
+      </reference>
+      <name value="NotificationFromDIPS-Example"/>
+      <description value="Notifikasjon fra DIPS"/>
+      <exampleCanonical value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RetinaObservation"/>
+      </reference>
+      <name value="Observation for Retinascreening"/>
+      <description value="This is observations connected to RetinaDiagnosticReport"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/PegaOperation"/>
+      </reference>
+      <name value="PegaOperation"/>
+      <description value="Example request from Pega to append AI results to existing DiagnosticReport"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/QueryResponseForExaminationsBetweenTwoDatesNoAI-Example"/>
+      </reference>
+      <name value="QueryResponseForExaminationsBetweenTwoDatesNoAI-Example"/>
+      <description value="Result of query for xaminations bwetween two dates, not containing AI result. Note: The resource references in this example are not correct."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/QueryResponseForSpecificExaminationNoAI-Example"/>
+      </reference>
+      <name value="QueryResponseForSpecificExaminationNoAI-Example"/>
+      <description value="Result of query for a specific examination idfentified by ID containing no AI result."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/QueryResponseWithSingleExaminationAndAI-Example"/>
+      </reference>
+      <name value="QueryResponseWithSingleExaminationAndAI-Example"/>
+      <description value="Example response containing a single diagnostic report containing AI result."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/diagnosticreport-codes-vs"/>
+      </reference>
+      <name value="Rapport for Retina-screening"/>
+      <description value="Rapporttype bildediagnsotikk fra Volven 8660"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tiltaksstatus-forrige-undersokelse-extension"/>
+      </reference>
+      <name value="Titaksstaus forrige undersøkelse Retina"/>
+      <description value="Angir om et tiltak er primært eller sekundært"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tiltaksstatus-forrigeUndersokelse-vs"/>
+      </reference>
+      <name value="Verdisett for tiltaksstatus neste undersøkelse"/>
+      <description value="Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/tiltakstatus-nesteundersokelse-cs"/>
+      </reference>
+      <name value="Verdisett for tiltaksstatus neste undersøkelse"/>
+      <description value="Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/videre-forlop-cs"/>
+      </reference>
+      <name value="Verdisett for videre forløp Retinascreening"/>
+      <description value="Verdisett som beskriver verdier for videre forløp Retinascreening"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/videre-forlop-vs"/>
+      </reference>
+      <name value="Verdisett for videre forløpsstudie"/>
+      <description value="Verdisett som beskriver videre forløp for Retinascreening."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/videre-forlop-extension"/>
+      </reference>
+      <name value="Videre forløpsstudie Retina"/>
+      <description value="Angir videre forløp"/>
+      <exampleBoolean value="false"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "tiltaksstatus-forrigeUndersokelse-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet tiltaksstatus-forrigeUndersokelse-vs</b></p><a name=\"tiltaksstatus-forrigeUndersokelse-vs\"> </a><a name=\"hctiltaksstatus-forrigeUndersokelse-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-tiltakstatus-nesteundersokelse-cs.html\"><code>http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs</code></a> version <span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\">&#x1F4E6;0.1.1</span></li></ul></div>"
+  },
+  "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/tiltaksstatus-forrigeUndersokelse-vs",
+  "version" : "0.1.1",
+  "name" : "TiltaksstatusForrigeUndersokelseValueSet",
+  "title" : "Verdisett for tiltaksstatus neste undersøkelse",
+  "status" : "draft",
+  "date" : "2025-10-07T21:19:45+02:00",
+  "publisher" : "DIPS AS",
+  "contact" : [{
+    "name" : "DIPS AS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dips.no/"
+    },
+    {
+      "system" : "email",
+      "value" : "teamsolsiden@dips.no"
+    }]
+  }],
+  "description" : "Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening",
+  "compose" : {
+    "include" : [{
+      "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs"
+    }]
+  }
+}

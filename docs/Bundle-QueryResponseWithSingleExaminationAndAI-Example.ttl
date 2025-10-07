@@ -1,0 +1,426 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://dips.no/fhir/RetinaIntegration/Bundle/QueryResponseWithSingleExaminationAndAI-Example> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "QueryResponseWithSingleExaminationAndAI-Example"] ; # 
+  fhir:type [ fhir:v "searchset"] ; # 
+  fhir:total [ fhir:v "1"^^xsd:nonNegativeInteger] ; # 
+  fhir:entry ( [
+     fhir:resource ( [
+       a fhir:DiagnosticReport ;
+       fhir:id [ fhir:v "DiagnosticReportWitKI" ] ;
+       fhir:meta [
+         fhir:profile ( [
+           fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport"^^xsd:anyURI ;
+           fhir:link <http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport>
+         ] )
+       ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DiagnosticReport_DiagnosticReportWitKI\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport DiagnosticReportWitKI</b></p><a name=\"DiagnosticReportWitKI\"> </a><a name=\"hcDiagnosticReportWitKI\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RetinaDiagnosticReport.html\">DiagnosticReport for Retinascreening</a></p></div><h2><span title=\"Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660 B}\">Bildediagnostikk</span> </h2><table class=\"grid\"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>When For</td><td>2025-09-30 12:00:00+0000</td></tr><tr><td>Identifiers</td><td> <code>http://dips.no/fhir/NamingSystem/retina-examination-id</code>/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee <code>http://sectra.no/identifiers</code>/MMA94126079</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>When For</b></td></tr><tr><td><a href=\"Bundle-QueryResponseForExaminationsBetweenTwoDatesNoAI-Example.html#Observation_ObservationGlukose\"><span title=\"Codes:{http://snomed.info/sct 167491000202108}\">HbA1c</span></a></td><td>63.2</td><td>Final</td><td>2025-06-06 10:30:00+0000</td></tr><tr><td><a href=\"Bundle-QueryResponseForExaminationsBetweenTwoDatesNoAI-Example.html#Observation_ObservationFoto\"><span title=\"Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275 CKDP10}\">Fundusfotagrafi</span></a></td><td>true</td><td>Final</td><td/></tr><tr><td><a href=\"Bundle-QueryResponseForExaminationsBetweenTwoDatesNoAI-Example.html#Observation_ObservationOCT\"><span title=\"Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275 CKFX16}\">OCT tatt</span></a></td><td>true</td><td>Final</td><td/></tr><tr><td><a href=\"Bundle-QueryResponseWithSingleExaminationAndAI-Example.html#Observation_Bilde1DRhoyreWithIdentifier\"><span title=\"Codes:{http://snomed.info/sct 4855003}\">Diabetsk retinopati</span></a> (<span title=\"Codes:{http://snomed.info/sct 5597008}\">Høyre retina</span>)</td><td>5</td><td>Final</td><td/></tr><tr><td><a href=\"Bundle-QueryResponseWithSingleExaminationAndAI-Example.html#Observation_Bilde1DMEhoyreWithIdentifier\"><span title=\"Codes:{http://snomed.info/sct 312912001}\">Diabetisk makulaødem</span></a> (<span title=\"Codes:{http://snomed.info/sct 5597008}\">Høyre retina</span>)</td><td>true</td><td>Final</td><td/></tr><tr><td><a href=\"Bundle-QueryResponseWithSingleExaminationAndAI-Example.html#Observation_Bilde1DRvenstreWithIdentifier\"><span title=\"Codes:{http://snomed.info/sct 4855003}\">Diabetsk retinopati</span></a> (<span title=\"Codes:{http://snomed.info/sct 58443009}\">Venstre retina</span>)</td><td><span style=\"color: maroon\" title=\"Error\">Error: <b><span title=\"Codes:\">not-asked</span></b></span></td><td>Final</td><td/></tr><tr><td><a href=\"Bundle-QueryResponseWithSingleExaminationAndAI-Example.html#Observation_Bilde1DMEvenstreWithIdentifier\"><span title=\"Codes:{http://snomed.info/sct 312912001}\">Diabetisk makulaødem</span></a> (<span title=\"Codes:{http://snomed.info/sct 58443009}\">Venstre retina</span>)</td><td>true</td><td>Final</td><td/></tr></table><p><b>Coded Conclusions:</b></p><ul><li><span title=\"Codes:{http://helse-sorost.no/fhir/CodeSystem/retina-conclusioncode-cs 1001}\">Gradering ferdig</span></li></ul></div>"^^rdf:XMLLiteral
+       ] ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "4001" ] ;
+             fhir:display [ fhir:v "A" ]
+           ] )
+         ]
+       ] [
+         fhir:url [ fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/tiltaksstatus-forrige-undersokelse-extension"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "3001" ] ;
+             fhir:display [ fhir:v "Ny fotokontroll (primærgradering)" ]
+           ] )
+         ]
+       ] [
+         fhir:url [ fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/frist-nesteundersokelse-extension"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:date ;
+           fhir:v "2026-03-29"^^xsd:date
+         ]
+       ] [
+         fhir:url [ fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-productname-extension"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "AwesomeAI for Retina"
+         ]
+       ] [
+         fhir:url [ fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-versjon-algoritme-extension"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "v2.1.0"
+         ]
+       ] [
+         fhir:url [ fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-protokoll-extension"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Standard protocol"
+         ]
+       ] ) ;
+       fhir:identifier ( [
+         fhir:system [ fhir:v "http://dips.no/fhir/NamingSystem/retina-examination-id"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee" ]
+       ] [
+         fhir:system [ fhir:v "http://sectra.no/identifiers"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MMA94126079" ]
+       ] ) ;
+       fhir:status [ fhir:v "final" ] ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "B" ] ;
+           fhir:display [ fhir:v "Bildediagnostikk" ]
+         ] )
+       ] ;
+       fhir:subject [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/Patient/cdp1123123> ;
+         fhir:reference [ fhir:v "Patient/cdp1123123" ] ;
+         fhir:identifier [
+           fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.4.1"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "01015549145" ]
+         ]
+       ] ;
+       fhir:effective [
+         a fhir:dateTime ;
+         fhir:v "2025-09-30T12:00:00Z"^^xsd:dateTime
+       ] ;
+       fhir:result ( [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/Observation/ObservationGlukose> ;
+         fhir:reference [ fhir:v "Observation/ObservationGlukose" ]
+       ] [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/Observation/ObservationFoto> ;
+         fhir:reference [ fhir:v "Observation/ObservationFoto" ]
+       ] [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/Observation/ObservationOCT> ;
+         fhir:reference [ fhir:v "Observation/ObservationOCT" ]
+       ] [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/Observation/Bilde1DRhoyreWithIdentifier> ;
+         fhir:reference [ fhir:v "Observation/Bilde1DRhoyreWithIdentifier" ]
+       ] [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/Observation/Bilde1DMEhoyreWithIdentifier> ;
+         fhir:reference [ fhir:v "Observation/Bilde1DMEhoyreWithIdentifier" ]
+       ] [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/Observation/Bilde1DRvenstreWithIdentifier> ;
+         fhir:reference [ fhir:v "Observation/Bilde1DRvenstreWithIdentifier" ]
+       ] [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/Observation/Bilde1DMEvenstreWithIdentifier> ;
+         fhir:reference [ fhir:v "Observation/Bilde1DMEvenstreWithIdentifier" ]
+       ] ) ;
+       fhir:imagingStudy ( [
+         fhir:link <http://dips.no/fhir/RetinaIntegration/ImagingStudy/Bilde1Sectra> ;
+         fhir:reference [ fhir:v "ImagingStudy/Bilde1Sectra" ]
+       ] ) ;
+       fhir:conclusionCode ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://helse-sorost.no/fhir/CodeSystem/retina-conclusioncode-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "1001" ] ;
+           fhir:display [ fhir:v "Gradering ferdig" ]
+         ] )
+       ] ) ;
+       fhir:presentedForm ( [
+         fhir:contentType [ fhir:v "text/json" ] ;
+         fhir:data [ fhir:v "Base64binary"^^xsd:base64Binary ] ;
+         fhir:title [ fhir:v "Full AI report" ]
+       ] )
+     ] ) ;
+     fhir:search [
+       fhir:mode [ fhir:v "match" ]
+     ]
+  ] [
+     fhir:resource ( [
+       a fhir:Observation ;
+       fhir:id [ fhir:v "ObservationGlukose" ] ;
+       fhir:meta [
+         fhir:profile ( [
+           fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"^^xsd:anyURI ;
+           fhir:link <http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation>
+         ] )
+       ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ObservationGlukose\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ObservationGlukose</b></p><a name=\"ObservationGlukose\"> </a><a name=\"hcObservationGlukose\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RetinaObservation.html\">Observation for Retinascreening</a></p></div><p><b>identifier</b>: <code>http://dips.no/fhir/NamingSystem/retina-observation-id</code>/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 167491000202108}\">HbA1c</span></p><p><b>effective</b>: 2025-06-06 10:30:00+0000</p><p><b>value</b>: 63.2</p></div>"^^rdf:XMLLiteral
+       ] ;
+       fhir:identifier ( [
+         fhir:system [ fhir:v "http://dips.no/fhir/NamingSystem/retina-observation-id"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee" ]
+       ] ) ;
+       fhir:status [ fhir:v "final" ] ;
+       fhir:code [
+         fhir:coding ( [
+           a sct:167491000202108 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "167491000202108" ] ;
+           fhir:display [ fhir:v "HbA1c" ]
+         ] )
+       ] ;
+       fhir:effective [
+         a fhir:dateTime ;
+         fhir:v "2025-06-06T10:30:00Z"^^xsd:dateTime
+       ] ;
+       fhir:value [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v 63.2 ]
+       ]
+     ] ) ;
+     fhir:search [
+       fhir:mode [ fhir:v "include" ]
+     ]
+  ] [
+     fhir:resource ( [
+       a fhir:Observation ;
+       fhir:id [ fhir:v "ObservationFoto" ] ;
+       fhir:meta [
+         fhir:profile ( [
+           fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"^^xsd:anyURI ;
+           fhir:link <http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation>
+         ] )
+       ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ObservationFoto\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ObservationFoto</b></p><a name=\"ObservationFoto\"> </a><a name=\"hcObservationFoto\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RetinaObservation.html\">Observation for Retinascreening</a></p></div><p><b>identifier</b>: <code>http://dips.no/fhir/NamingSystem/retina-observation-id</code>/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275 CKDP10}\">Fundusfotagrafi</span></p><p><b>value</b>: true</p></div>"^^rdf:XMLLiteral
+       ] ;
+       fhir:identifier ( [
+         fhir:system [ fhir:v "http://dips.no/fhir/NamingSystem/retina-observation-id"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee" ]
+       ] ) ;
+       fhir:status [ fhir:v "final" ] ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "CKDP10" ] ;
+           fhir:display [ fhir:v "Fundusfotagrafi" ]
+         ] )
+       ] ;
+       fhir:value [
+         a fhir:boolean ;
+         fhir:v true
+       ]
+     ] ) ;
+     fhir:search [
+       fhir:mode [ fhir:v "include" ]
+     ]
+  ] [
+     fhir:resource ( [
+       a fhir:Observation ;
+       fhir:id [ fhir:v "ObservationOCT" ] ;
+       fhir:meta [
+         fhir:profile ( [
+           fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"^^xsd:anyURI ;
+           fhir:link <http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation>
+         ] )
+       ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ObservationOCT\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ObservationOCT</b></p><a name=\"ObservationOCT\"> </a><a name=\"hcObservationOCT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RetinaObservation.html\">Observation for Retinascreening</a></p></div><p><b>identifier</b>: <code>http://dips.no/fhir/NamingSystem/retina-observation-id</code>/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275 CKFX16}\">OCT tatt</span></p><p><b>value</b>: true</p></div>"^^rdf:XMLLiteral
+       ] ;
+       fhir:identifier ( [
+         fhir:system [ fhir:v "http://dips.no/fhir/NamingSystem/retina-observation-id"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee" ]
+       ] ) ;
+       fhir:status [ fhir:v "final" ] ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "CKFX16" ] ;
+           fhir:display [ fhir:v "OCT tatt" ]
+         ] )
+       ] ;
+       fhir:value [
+         a fhir:boolean ;
+         fhir:v true
+       ]
+     ] ) ;
+     fhir:search [
+       fhir:mode [ fhir:v "include" ]
+     ]
+  ] [
+     fhir:resource ( [
+       a fhir:Observation ;
+       fhir:id [ fhir:v "Bilde1DRhoyreWithIdentifier" ] ;
+       fhir:meta [
+         fhir:profile ( [
+           fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"^^xsd:anyURI ;
+           fhir:link <http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation>
+         ] )
+       ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_Bilde1DRhoyreWithIdentifier\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation Bilde1DRhoyreWithIdentifier</b></p><a name=\"Bilde1DRhoyreWithIdentifier\"> </a><a name=\"hcBilde1DRhoyreWithIdentifier\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RetinaObservation.html\">Observation for Retinascreening</a></p></div><p><b>identifier</b>: <code>http://dips.no/fhir/NamingSystem/retina-observation-id</code>/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 4855003}\">Diabetsk retinopati</span></p><p><b>value</b>: 5</p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 5597008}\">Høyre retina</span></p></div>"^^rdf:XMLLiteral
+       ] ;
+       fhir:identifier ( [
+         fhir:system [ fhir:v "http://dips.no/fhir/NamingSystem/retina-observation-id"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee" ]
+       ] ) ;
+       fhir:status [ fhir:v "final" ] ;
+       fhir:code [
+         fhir:coding ( [
+           a sct:4855003 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "4855003" ] ;
+           fhir:display [ fhir:v "Diabetsk retinopati" ]
+         ] )
+       ] ;
+       fhir:value [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "5"^^xsd:decimal ]
+       ] ;
+       fhir:bodySite [
+         fhir:coding ( [
+           a sct:5597008 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "5597008" ] ;
+           fhir:display [ fhir:v "Høyre retina" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:search [
+       fhir:mode [ fhir:v "include" ]
+     ]
+  ] [
+     fhir:resource ( [
+       a fhir:Observation ;
+       fhir:id [ fhir:v "Bilde1DMEhoyreWithIdentifier" ] ;
+       fhir:meta [
+         fhir:profile ( [
+           fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"^^xsd:anyURI ;
+           fhir:link <http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation>
+         ] )
+       ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_Bilde1DMEhoyreWithIdentifier\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation Bilde1DMEhoyreWithIdentifier</b></p><a name=\"Bilde1DMEhoyreWithIdentifier\"> </a><a name=\"hcBilde1DMEhoyreWithIdentifier\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RetinaObservation.html\">Observation for Retinascreening</a></p></div><p><b>identifier</b>: <code>http://dips.no/fhir/NamingSystem/retina-observation-id</code>/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 312912001}\">Diabetisk makulaødem</span></p><p><b>value</b>: true</p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 5597008}\">Høyre retina</span></p></div>"^^rdf:XMLLiteral
+       ] ;
+       fhir:identifier ( [
+         fhir:system [ fhir:v "http://dips.no/fhir/NamingSystem/retina-observation-id"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee" ]
+       ] ) ;
+       fhir:status [ fhir:v "final" ] ;
+       fhir:code [
+         fhir:coding ( [
+           a sct:312912001 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "312912001" ] ;
+           fhir:display [ fhir:v "Diabetisk makulaødem" ]
+         ] )
+       ] ;
+       fhir:value [
+         a fhir:boolean ;
+         fhir:v true
+       ] ;
+       fhir:bodySite [
+         fhir:coding ( [
+           a sct:5597008 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "5597008" ] ;
+           fhir:display [ fhir:v "Høyre retina" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:search [
+       fhir:mode [ fhir:v "include" ]
+     ]
+  ] [
+     fhir:resource ( [
+       a fhir:Observation ;
+       fhir:id [ fhir:v "Bilde1DRvenstreWithIdentifier" ] ;
+       fhir:meta [
+         fhir:profile ( [
+           fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"^^xsd:anyURI ;
+           fhir:link <http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation>
+         ] )
+       ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_Bilde1DRvenstreWithIdentifier\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation Bilde1DRvenstreWithIdentifier</b></p><a name=\"Bilde1DRvenstreWithIdentifier\"> </a><a name=\"hcBilde1DRvenstreWithIdentifier\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RetinaObservation.html\">Observation for Retinascreening</a></p></div><p><b>identifier</b>: <code>http://dips.no/fhir/NamingSystem/retina-observation-id</code>/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 4855003}\">Diabetsk retinopati</span></p><p><b>dataAbsentReason</b>: <span title=\"Codes:\">not-asked</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 58443009}\">Venstre retina</span></p></div>"^^rdf:XMLLiteral
+       ] ;
+       fhir:identifier ( [
+         fhir:system [ fhir:v "http://dips.no/fhir/NamingSystem/retina-observation-id"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee" ]
+       ] ) ;
+       fhir:status [ fhir:v "final" ] ;
+       fhir:code [
+         fhir:coding ( [
+           a sct:4855003 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "4855003" ] ;
+           fhir:display [ fhir:v "Diabetsk retinopati" ]
+         ] )
+       ] ;
+       fhir:dataAbsentReason [
+         fhir:coding ( [
+           fhir:code [ fhir:v "not-asked" ]
+         ] )
+       ] ;
+       fhir:bodySite [
+         fhir:coding ( [
+           a sct:58443009 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "58443009" ] ;
+           fhir:display [ fhir:v "Venstre retina" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:search [
+       fhir:mode [ fhir:v "include" ]
+     ]
+  ] [
+     fhir:resource ( [
+       a fhir:Observation ;
+       fhir:id [ fhir:v "Bilde1DMEvenstreWithIdentifier" ] ;
+       fhir:meta [
+         fhir:profile ( [
+           fhir:v "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"^^xsd:anyURI ;
+           fhir:link <http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation>
+         ] )
+       ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_Bilde1DMEvenstreWithIdentifier\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation Bilde1DMEvenstreWithIdentifier</b></p><a name=\"Bilde1DMEvenstreWithIdentifier\"> </a><a name=\"hcBilde1DMEvenstreWithIdentifier\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RetinaObservation.html\">Observation for Retinascreening</a></p></div><p><b>identifier</b>: <code>http://dips.no/fhir/NamingSystem/retina-observation-id</code>/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 312912001}\">Diabetisk makulaødem</span></p><p><b>value</b>: true</p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 58443009}\">Venstre retina</span></p></div>"^^rdf:XMLLiteral
+       ] ;
+       fhir:identifier ( [
+         fhir:system [ fhir:v "http://dips.no/fhir/NamingSystem/retina-observation-id"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee" ]
+       ] ) ;
+       fhir:status [ fhir:v "final" ] ;
+       fhir:code [
+         fhir:coding ( [
+           a sct:312912001 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "312912001" ] ;
+           fhir:display [ fhir:v "Diabetisk makulaødem" ]
+         ] )
+       ] ;
+       fhir:value [
+         a fhir:boolean ;
+         fhir:v true
+       ] ;
+       fhir:bodySite [
+         fhir:coding ( [
+           a sct:58443009 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "58443009" ] ;
+           fhir:display [ fhir:v "Venstre retina" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:search [
+       fhir:mode [ fhir:v "include" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

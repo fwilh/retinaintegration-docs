@@ -1,0 +1,41 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "retina-conclusioncode-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem retina-conclusioncode-cs</b></p><a name=\"retina-conclusioncode-cs\"> </a><a name=\"hcretina-conclusioncode-cs\"> </a><p>This  code system <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1001<a name=\"retina-conclusioncode-cs-1001\"> </a></td><td>Gradering ferdig</td></tr><tr><td style=\"white-space:nowrap\">1002<a name=\"retina-conclusioncode-cs-1002\"> </a></td><td>Til primærgradering</td></tr><tr><td style=\"white-space:nowrap\">1003<a name=\"retina-conclusioncode-cs-1003\"> </a></td><td>Til sekundærgradering</td></tr></table></div>"
+  },
+  "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs",
+  "version" : "0.1.1",
+  "name" : "RetinaConclusionCodesystem",
+  "title" : "Kodeverk for konklusjon Retina",
+  "status" : "draft",
+  "date" : "2025-10-07T21:19:45+02:00",
+  "publisher" : "DIPS AS",
+  "contact" : [{
+    "name" : "DIPS AS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dips.no/"
+    },
+    {
+      "system" : "email",
+      "value" : "teamsolsiden@dips.no"
+    }]
+  }],
+  "description" : "Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening",
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "1001",
+    "display" : "Gradering ferdig"
+  },
+  {
+    "code" : "1002",
+    "display" : "Til primærgradering"
+  },
+  {
+    "code" : "1003",
+    "display" : "Til sekundærgradering"
+  }]
+}

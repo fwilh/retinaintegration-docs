@@ -1,0 +1,358 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "QueryResponseWithSingleExaminationAndAI-Example",
+  "type" : "searchset",
+  "total" : 1,
+  "entry" : [{
+    "resource" : {
+      "resourceType" : "DiagnosticReport",
+      "id" : "DiagnosticReportWitKI",
+      "meta" : {
+        "profile" : ["http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DiagnosticReport_DiagnosticReportWitKI\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport DiagnosticReportWitKI</b></p><a name=\"DiagnosticReportWitKI\"> </a><a name=\"hcDiagnosticReportWitKI\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RetinaDiagnosticReport.html\">DiagnosticReport for Retinascreening</a></p></div><h2><span title=\"Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660 B}\">Bildediagnostikk</span> </h2><table class=\"grid\"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>When For</td><td>2025-09-30 12:00:00+0000</td></tr><tr><td>Identifiers</td><td> <code>http://dips.no/fhir/NamingSystem/retina-examination-id</code>/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee <code>http://sectra.no/identifiers</code>/MMA94126079</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>When For</b></td></tr><tr><td><a href=\"Bundle-QueryResponseForExaminationsBetweenTwoDatesNoAI-Example.html#Observation_ObservationGlukose\"><span title=\"Codes:{http://snomed.info/sct 167491000202108}\">HbA1c</span></a></td><td>63.2</td><td>Final</td><td>2025-06-06 10:30:00+0000</td></tr><tr><td><a href=\"Bundle-QueryResponseForExaminationsBetweenTwoDatesNoAI-Example.html#Observation_ObservationFoto\"><span title=\"Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275 CKDP10}\">Fundusfotagrafi</span></a></td><td>true</td><td>Final</td><td/></tr><tr><td><a href=\"Bundle-QueryResponseForExaminationsBetweenTwoDatesNoAI-Example.html#Observation_ObservationOCT\"><span title=\"Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275 CKFX16}\">OCT tatt</span></a></td><td>true</td><td>Final</td><td/></tr><tr><td><a href=\"Bundle-QueryResponseWithSingleExaminationAndAI-Example.html#Observation_Bilde1DRhoyreWithIdentifier\"><span title=\"Codes:{http://snomed.info/sct 4855003}\">Diabetsk retinopati</span></a> (<span title=\"Codes:{http://snomed.info/sct 5597008}\">Høyre retina</span>)</td><td>5</td><td>Final</td><td/></tr><tr><td><a href=\"Bundle-QueryResponseWithSingleExaminationAndAI-Example.html#Observation_Bilde1DMEhoyreWithIdentifier\"><span title=\"Codes:{http://snomed.info/sct 312912001}\">Diabetisk makulaødem</span></a> (<span title=\"Codes:{http://snomed.info/sct 5597008}\">Høyre retina</span>)</td><td>true</td><td>Final</td><td/></tr><tr><td><a href=\"Bundle-QueryResponseWithSingleExaminationAndAI-Example.html#Observation_Bilde1DRvenstreWithIdentifier\"><span title=\"Codes:{http://snomed.info/sct 4855003}\">Diabetsk retinopati</span></a> (<span title=\"Codes:{http://snomed.info/sct 58443009}\">Venstre retina</span>)</td><td><span style=\"color: maroon\" title=\"Error\">Error: <b><span title=\"Codes:\">not-asked</span></b></span></td><td>Final</td><td/></tr><tr><td><a href=\"Bundle-QueryResponseWithSingleExaminationAndAI-Example.html#Observation_Bilde1DMEvenstreWithIdentifier\"><span title=\"Codes:{http://snomed.info/sct 312912001}\">Diabetisk makulaødem</span></a> (<span title=\"Codes:{http://snomed.info/sct 58443009}\">Venstre retina</span>)</td><td>true</td><td>Final</td><td/></tr></table><p><b>Coded Conclusions:</b></p><ul><li><span title=\"Codes:{http://helse-sorost.no/fhir/CodeSystem/retina-conclusioncode-cs 1001}\">Gradering ferdig</span></li></ul></div>"
+      },
+      "extension" : [{
+        "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs",
+            "code" : "4001",
+            "display" : "A"
+          }]
+        }
+      },
+      {
+        "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/tiltaksstatus-forrige-undersokelse-extension",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs",
+            "code" : "3001",
+            "display" : "Ny fotokontroll (primærgradering)"
+          }]
+        }
+      },
+      {
+        "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/frist-nesteundersokelse-extension",
+        "valueDate" : "2026-03-29"
+      },
+      {
+        "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-productname-extension",
+        "valueString" : "AwesomeAI for Retina"
+      },
+      {
+        "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-versjon-algoritme-extension",
+        "valueString" : "v2.1.0"
+      },
+      {
+        "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-protokoll-extension",
+        "valueString" : "Standard protocol"
+      }],
+      "identifier" : [{
+        "system" : "http://dips.no/fhir/NamingSystem/retina-examination-id",
+        "value" : "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+      },
+      {
+        "system" : "http://sectra.no/identifiers",
+        "value" : "MMA94126079"
+      }],
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660",
+          "code" : "B",
+          "display" : "Bildediagnostikk"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/cdp1123123",
+        "identifier" : {
+          "system" : "urn:oid:2.16.578.1.12.4.1.4.1",
+          "value" : "01015549145"
+        }
+      },
+      "effectiveDateTime" : "2025-09-30T12:00:00Z",
+      "result" : [{
+        "reference" : "Observation/ObservationGlukose"
+      },
+      {
+        "reference" : "Observation/ObservationFoto"
+      },
+      {
+        "reference" : "Observation/ObservationOCT"
+      },
+      {
+        "reference" : "Observation/Bilde1DRhoyreWithIdentifier"
+      },
+      {
+        "reference" : "Observation/Bilde1DMEhoyreWithIdentifier"
+      },
+      {
+        "reference" : "Observation/Bilde1DRvenstreWithIdentifier"
+      },
+      {
+        "reference" : "Observation/Bilde1DMEvenstreWithIdentifier"
+      }],
+      "imagingStudy" : [{
+        "reference" : "ImagingStudy/Bilde1Sectra"
+      }],
+      "conclusionCode" : [{
+        "coding" : [{
+          "system" : "http://helse-sorost.no/fhir/CodeSystem/retina-conclusioncode-cs",
+          "code" : "1001",
+          "display" : "Gradering ferdig"
+        }]
+      }],
+      "presentedForm" : [{
+        "contentType" : "text/json",
+        "data" : "Base64binary",
+        "title" : "Full AI report"
+      }]
+    },
+    "search" : {
+      "mode" : "match"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "ObservationGlukose",
+      "meta" : {
+        "profile" : ["http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ObservationGlukose\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ObservationGlukose</b></p><a name=\"ObservationGlukose\"> </a><a name=\"hcObservationGlukose\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RetinaObservation.html\">Observation for Retinascreening</a></p></div><p><b>identifier</b>: <code>http://dips.no/fhir/NamingSystem/retina-observation-id</code>/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 167491000202108}\">HbA1c</span></p><p><b>effective</b>: 2025-06-06 10:30:00+0000</p><p><b>value</b>: 63.2</p></div>"
+      },
+      "identifier" : [{
+        "system" : "http://dips.no/fhir/NamingSystem/retina-observation-id",
+        "value" : "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+      }],
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "167491000202108",
+          "display" : "HbA1c"
+        }]
+      },
+      "effectiveDateTime" : "2025-06-06T10:30:00Z",
+      "valueQuantity" : {
+        "value" : 63.2
+      }
+    },
+    "search" : {
+      "mode" : "include"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "ObservationFoto",
+      "meta" : {
+        "profile" : ["http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ObservationFoto\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ObservationFoto</b></p><a name=\"ObservationFoto\"> </a><a name=\"hcObservationFoto\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RetinaObservation.html\">Observation for Retinascreening</a></p></div><p><b>identifier</b>: <code>http://dips.no/fhir/NamingSystem/retina-observation-id</code>/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275 CKDP10}\">Fundusfotagrafi</span></p><p><b>value</b>: true</p></div>"
+      },
+      "identifier" : [{
+        "system" : "http://dips.no/fhir/NamingSystem/retina-observation-id",
+        "value" : "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+      }],
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275",
+          "code" : "CKDP10",
+          "display" : "Fundusfotagrafi"
+        }]
+      },
+      "valueBoolean" : true
+    },
+    "search" : {
+      "mode" : "include"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "ObservationOCT",
+      "meta" : {
+        "profile" : ["http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ObservationOCT\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ObservationOCT</b></p><a name=\"ObservationOCT\"> </a><a name=\"hcObservationOCT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RetinaObservation.html\">Observation for Retinascreening</a></p></div><p><b>identifier</b>: <code>http://dips.no/fhir/NamingSystem/retina-observation-id</code>/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275 CKFX16}\">OCT tatt</span></p><p><b>value</b>: true</p></div>"
+      },
+      "identifier" : [{
+        "system" : "http://dips.no/fhir/NamingSystem/retina-observation-id",
+        "value" : "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+      }],
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275",
+          "code" : "CKFX16",
+          "display" : "OCT tatt"
+        }]
+      },
+      "valueBoolean" : true
+    },
+    "search" : {
+      "mode" : "include"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Bilde1DRhoyreWithIdentifier",
+      "meta" : {
+        "profile" : ["http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_Bilde1DRhoyreWithIdentifier\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation Bilde1DRhoyreWithIdentifier</b></p><a name=\"Bilde1DRhoyreWithIdentifier\"> </a><a name=\"hcBilde1DRhoyreWithIdentifier\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RetinaObservation.html\">Observation for Retinascreening</a></p></div><p><b>identifier</b>: <code>http://dips.no/fhir/NamingSystem/retina-observation-id</code>/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 4855003}\">Diabetsk retinopati</span></p><p><b>value</b>: 5</p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 5597008}\">Høyre retina</span></p></div>"
+      },
+      "identifier" : [{
+        "system" : "http://dips.no/fhir/NamingSystem/retina-observation-id",
+        "value" : "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+      }],
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "4855003",
+          "display" : "Diabetsk retinopati"
+        }]
+      },
+      "valueQuantity" : {
+        "value" : 5
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "5597008",
+          "display" : "Høyre retina"
+        }]
+      }
+    },
+    "search" : {
+      "mode" : "include"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Bilde1DMEhoyreWithIdentifier",
+      "meta" : {
+        "profile" : ["http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_Bilde1DMEhoyreWithIdentifier\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation Bilde1DMEhoyreWithIdentifier</b></p><a name=\"Bilde1DMEhoyreWithIdentifier\"> </a><a name=\"hcBilde1DMEhoyreWithIdentifier\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RetinaObservation.html\">Observation for Retinascreening</a></p></div><p><b>identifier</b>: <code>http://dips.no/fhir/NamingSystem/retina-observation-id</code>/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 312912001}\">Diabetisk makulaødem</span></p><p><b>value</b>: true</p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 5597008}\">Høyre retina</span></p></div>"
+      },
+      "identifier" : [{
+        "system" : "http://dips.no/fhir/NamingSystem/retina-observation-id",
+        "value" : "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+      }],
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "312912001",
+          "display" : "Diabetisk makulaødem"
+        }]
+      },
+      "valueBoolean" : true,
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "5597008",
+          "display" : "Høyre retina"
+        }]
+      }
+    },
+    "search" : {
+      "mode" : "include"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Bilde1DRvenstreWithIdentifier",
+      "meta" : {
+        "profile" : ["http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_Bilde1DRvenstreWithIdentifier\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation Bilde1DRvenstreWithIdentifier</b></p><a name=\"Bilde1DRvenstreWithIdentifier\"> </a><a name=\"hcBilde1DRvenstreWithIdentifier\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RetinaObservation.html\">Observation for Retinascreening</a></p></div><p><b>identifier</b>: <code>http://dips.no/fhir/NamingSystem/retina-observation-id</code>/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 4855003}\">Diabetsk retinopati</span></p><p><b>dataAbsentReason</b>: <span title=\"Codes:\">not-asked</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 58443009}\">Venstre retina</span></p></div>"
+      },
+      "identifier" : [{
+        "system" : "http://dips.no/fhir/NamingSystem/retina-observation-id",
+        "value" : "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+      }],
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "4855003",
+          "display" : "Diabetsk retinopati"
+        }]
+      },
+      "dataAbsentReason" : {
+        "coding" : [{
+          "code" : "not-asked"
+        }]
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "58443009",
+          "display" : "Venstre retina"
+        }]
+      }
+    },
+    "search" : {
+      "mode" : "include"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Bilde1DMEvenstreWithIdentifier",
+      "meta" : {
+        "profile" : ["http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_Bilde1DMEvenstreWithIdentifier\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation Bilde1DMEvenstreWithIdentifier</b></p><a name=\"Bilde1DMEvenstreWithIdentifier\"> </a><a name=\"hcBilde1DMEvenstreWithIdentifier\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RetinaObservation.html\">Observation for Retinascreening</a></p></div><p><b>identifier</b>: <code>http://dips.no/fhir/NamingSystem/retina-observation-id</code>/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 312912001}\">Diabetisk makulaødem</span></p><p><b>value</b>: true</p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 58443009}\">Venstre retina</span></p></div>"
+      },
+      "identifier" : [{
+        "system" : "http://dips.no/fhir/NamingSystem/retina-observation-id",
+        "value" : "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+      }],
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "312912001",
+          "display" : "Diabetisk makulaødem"
+        }]
+      },
+      "valueBoolean" : true,
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "58443009",
+          "display" : "Venstre retina"
+        }]
+      }
+    },
+    "search" : {
+      "mode" : "include"
+    }
+  }]
+}

@@ -1,8 +1,235 @@
 {
   "resourceType" : "Bundle",
-  "id" : "825dcf6f-e793-4234-a014-62b11e68dc74",
+  "id" : "bef3f838-a942-48aa-892a-ccb4a2536e6b",
   "meta" : {
-    "lastUpdated" : "2025-10-07T15:59:31.006+02:00"
+    "lastUpdated" : "2025-10-07T21:20:21.484+02:00"
   },
-  "type" : "collection"
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusioncode-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-retina-conclusioncode-cs.html\">codesystem Kodeverk for konklusjon Retina v0.1.1 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs-1001\"> </a>\u00a0\u00a0<a href=\"CodeSystem-retina-conclusioncode-cs.html#retina-conclusioncode-cs-1001\">1001</a></td><td>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs</td><td>Gradering ferdig</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs-1002\"> </a>\u00a0\u00a0<a href=\"CodeSystem-retina-conclusioncode-cs.html#retina-conclusioncode-cs-1002\">1002</a></td><td>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs</td><td>Til primærgradering</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs-1003\"> </a>\u00a0\u00a0<a href=\"CodeSystem-retina-conclusioncode-cs.html#retina-conclusioncode-cs-1003\">1003</a></td><td>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs</td><td>Til sekundærgradering</td></tr></table></div>"
+      },
+      "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusioncode-vs",
+      "version" : "0.1.1",
+      "name" : "RetinaConclusionCodeValueset",
+      "title" : "Conclusion Code ValueSet for Retinascreening",
+      "status" : "draft",
+      "date" : "2025-10-07T21:19:45+02:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:8d2751ac-1db8-48ec-8ce1-e5d7cf5fff55",
+        "timestamp" : "2025-10-07T21:20:46+02:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs|0.1.1"
+        }],
+        "contains" : [{
+          "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs",
+          "code" : "1001",
+          "display" : "Gradering ferdig"
+        },
+        {
+          "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs",
+          "code" : "1002",
+          "display" : "Til primærgradering"
+        },
+        {
+          "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs",
+          "code" : "1003",
+          "display" : "Til sekundærgradering"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imagequality-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-retina-imagequality-cs.html\">codesystem Image Quality CodeSystem for Retinascreening v0.1.1 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs-2001\"> </a>\u00a0\u00a0<a href=\"CodeSystem-retina-imagequality-cs.html#retina-imagequality-cs-2001\">2001</a></td><td>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs</td><td>God</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs-2002\"> </a>\u00a0\u00a0<a href=\"CodeSystem-retina-imagequality-cs.html#retina-imagequality-cs-2002\">2002</a></td><td>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs</td><td>Moderat</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs-2003\"> </a>\u00a0\u00a0<a href=\"CodeSystem-retina-imagequality-cs.html#retina-imagequality-cs-2003\">2003</a></td><td>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs</td><td>Ikke graderbar</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs-2004\"> </a>\u00a0\u00a0<a href=\"CodeSystem-retina-imagequality-cs.html#retina-imagequality-cs-2004\">2004</a></td><td>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs</td><td>Mangler</td></tr></table></div>"
+      },
+      "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imagequality-vs",
+      "version" : "0.1.1",
+      "name" : "RetinaImageQualityValueSet",
+      "title" : "Image Quality ValueSet for Retinascreening",
+      "status" : "draft",
+      "date" : "2025-10-07T21:19:45+02:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:72c82b88-4fcc-4fef-b325-c51356999c21",
+        "timestamp" : "2025-10-07T21:20:46+02:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs|0.1.1"
+        }],
+        "contains" : [{
+          "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs",
+          "code" : "2001",
+          "display" : "God"
+        },
+        {
+          "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs",
+          "code" : "2002",
+          "display" : "Moderat"
+        },
+        {
+          "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs",
+          "code" : "2003",
+          "display" : "Ikke graderbar"
+        },
+        {
+          "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs",
+          "code" : "2004",
+          "display" : "Mangler"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://dips.no/fhir/RetinaIntegration/ValueSet/tiltaksstatus-forrigeUndersokelse-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-tiltakstatus-nesteundersokelse-cs.html\">codesystem Verdisett for tiltaksstatus neste undersøkelse v0.1.1 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs-3001\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tiltakstatus-nesteundersokelse-cs.html#tiltakstatus-nesteundersokelse-cs-3001\">3001</a></td><td>http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs</td><td>Ny fotokontroll (primærgradering)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs-3002\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tiltakstatus-nesteundersokelse-cs.html#tiltakstatus-nesteundersokelse-cs-3002\">3002</a></td><td>http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs</td><td>Ny fotokontroll (sekundærgradering)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs-3003\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tiltakstatus-nesteundersokelse-cs.html#tiltakstatus-nesteundersokelse-cs-3003\">3003</a></td><td>http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs</td><td>Ingen registrert tidligere undersøkelser</td></tr></table></div>"
+      },
+      "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/tiltaksstatus-forrigeUndersokelse-vs",
+      "version" : "0.1.1",
+      "name" : "TiltaksstatusForrigeUndersokelseValueSet",
+      "title" : "Verdisett for tiltaksstatus neste undersøkelse",
+      "status" : "draft",
+      "date" : "2025-10-07T21:19:45+02:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:4101a49b-fc98-43b0-a8ae-4c0c4c368d7a",
+        "timestamp" : "2025-10-07T21:20:47+02:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs|0.1.1"
+        }],
+        "contains" : [{
+          "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs",
+          "code" : "3001",
+          "display" : "Ny fotokontroll (primærgradering)"
+        },
+        {
+          "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs",
+          "code" : "3002",
+          "display" : "Ny fotokontroll (sekundærgradering)"
+        },
+        {
+          "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs",
+          "code" : "3003",
+          "display" : "Ingen registrert tidligere undersøkelser"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://dips.no/fhir/RetinaIntegration/ValueSet/videre-forlop-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-videre-forlop-cs.html\">codesystem Verdisett for videre forløp Retinascreening v0.1.1 (CodeSystem)</a></p><p>This value set contains 5 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs-4001\"> </a>\u00a0\u00a0<a href=\"CodeSystem-videre-forlop-cs.html#videre-forlop-cs-4001\">4001</a></td><td>http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs</td><td>A</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs-4002\"> </a>\u00a0\u00a0<a href=\"CodeSystem-videre-forlop-cs.html#videre-forlop-cs-4002\">4002</a></td><td>http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs</td><td>B</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs-4003\"> </a>\u00a0\u00a0<a href=\"CodeSystem-videre-forlop-cs.html#videre-forlop-cs-4003\">4003</a></td><td>http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs</td><td>C</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs-4004\"> </a>\u00a0\u00a0<a href=\"CodeSystem-videre-forlop-cs.html#videre-forlop-cs-4004\">4004</a></td><td>http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs</td><td>D</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs-4005\"> </a>\u00a0\u00a0<a href=\"CodeSystem-videre-forlop-cs.html#videre-forlop-cs-4005\">4005</a></td><td>http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs</td><td>E</td></tr></table></div>"
+      },
+      "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/videre-forlop-vs",
+      "version" : "0.1.1",
+      "name" : "VidereForlopValueSet",
+      "title" : "Verdisett for videre forløpsstudie",
+      "status" : "draft",
+      "date" : "2025-10-07T21:19:45+02:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:ae119622-a4b6-4b42-8008-74157909b866",
+        "timestamp" : "2025-10-07T21:20:47+02:00",
+        "total" : 5,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs|0.1.1"
+        }],
+        "contains" : [{
+          "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs",
+          "code" : "4001",
+          "display" : "A"
+        },
+        {
+          "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs",
+          "code" : "4002",
+          "display" : "B"
+        },
+        {
+          "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs",
+          "code" : "4003",
+          "display" : "C"
+        },
+        {
+          "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs",
+          "code" : "4004",
+          "display" : "D"
+        },
+        {
+          "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs",
+          "code" : "4005",
+          "display" : "E"
+        }]
+      }
+    }
+  }]
 }
