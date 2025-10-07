@@ -1,0 +1,16 @@
+[
+  {
+    "id" : "dips.fhir.retinaintegration",
+    "type" : "ImplementationGuide",
+    "url" : "http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration",
+    "version" : "0.1.0",
+    "name" : "RetinaIntegrationIG"
+  },
+  {
+    "id" : "MyPatient",
+    "type" : "StructureDefinition",
+    "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/MyPatient",
+    "version" : "0.1.0",
+    "name" : "MyPatient"
+  }
+]
