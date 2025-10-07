@@ -8,3 +8,4 @@ Gemfile.lock
 /template
 /input-cache
 /fsh-generated
+/output
