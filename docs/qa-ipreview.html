@@ -8,24 +8,24 @@
     <h2>Unattributed Code Systems</h2>
     <ul>
       <li>
-        <a href="Bundle-QueryResponseWithSingleExaminationAndAI-Example.html">
+        <a href="Parameters-PegaOperation.html">
+<code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs</code>        </a>
+      </li>
+      <li>
+        <a href="Bundle-BundleWithSingleExaminationAndAI-Example.html">
 <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs</code>        </a>
       </li>
       <li>
-        <a href="Bundle-QueryResponseWithSingleExaminationAndAI-Example.html">
+        <a href="Bundle-BundleWithSingleExaminationAndAI-Example.html">
 <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs</code>        </a>
       </li>
       <li>
-        <a href="Bundle-QueryResponseWithSingleExaminationAndAI-Example.html">
+        <a href="Bundle-BundleWithTwoExaminations-Example.html">
 <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-7275</code>        </a>
       </li>
       <li>
-        <a href="DiagnosticReport-aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee.html">
+        <a href="DiagnosticReport-bb2690e7-ca9f-4070-9c35-c7e36976b144.html">
 <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660</code>        </a>
-      </li>
-      <li>
-        <a href="Parameters-PegaOperation.html">
-<code>http://helse-sorost.no/fhir/CodeSystem/retina-conclusioncode-cs</code>        </a>
       </li>
     </ul>
     <h2>Copyright Fragment</h2>
@@ -49,9 +49,31 @@ This material contains content that is copyright of SNOMED International. Implem
 
               <li>
                 <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED Clinical Terms&amp;reg; (SNOMED CT&amp;reg;)</a>
-:                 <a href="Bundle-QueryResponseForExaminationsBetweenTwoDatesNoAI-Example.html">Bundle/QueryResponseForExaminationsBetweenTwoDatesNoAI-Example</a>
-,                 <a href="Bundle-QueryResponseForSpecificExaminationNoAI-Example.html">Bundle/QueryResponseForSpecificExaminationNoAI-Example</a>
-,                 <a href="Bundle-QueryResponseWithSingleExaminationAndAI-Example.html">Bundle/QueryResponseWithSingleExaminationAndAI-Example</a>
+:                 <a href="Bundle-BundleWithSinglExamination-Example.html">Bundle/BundleWithSinglExamination-Example</a>
+,                 <a href="Bundle-BundleWithSingleExaminationAndAI-Example.html">Bundle/BundleWithSingleExaminationAndAI-Example</a>
+,                 <a href="Bundle-BundleWithTwoExaminations-Example.html">Bundle/BundleWithTwoExaminations-Example</a>
+ and                 <a href="Parameters-PegaOperation.html">Parameters/PegaOperation</a>
+              </li>
+
+
+            </ul>
+
+
+          </div>
+        </li>
+
+        <li>
+This material derives from the HL7 Terminology (THO). THO is copyright &copy;1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see:           <a href="https://terminology.hl7.org/license.html">https://terminology.hl7.org/license.html</a>
+          <div onClick="if (document.getElementById('ipp2_2').innerHTML != '') {document.getElementById('ipp_2').innerHTML = document.getElementById('ipp2_2').innerHTML; document.getElementById('ipp2_2').innerHTML = ''}" id="ipp_2" data-fhir="generated">
+             <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
+          </div>
+          <div style="display: none" id="ipp2_2">
+
+            <ul>
+
+              <li>
+                <a href="http://terminology.hl7.org/6.5.0/CodeSystem-data-absent-reason.html">DataAbsentReason</a>
+:                 <a href="Bundle-BundleWithSingleExaminationAndAI-Example.html">Bundle/BundleWithSingleExaminationAndAI-Example</a>
  and                 <a href="Parameters-PegaOperation.html">Parameters/PegaOperation</a>
               </li>
 
@@ -71,7 +93,7 @@ This material contains content that is copyright of SNOMED International. Implem
     <ul>
       <li>
 
-          IG &copy; 2025+ DIPS AS.  Package dips.fhir.retinaintegration#0.1.1 based on FHIR 4.0.1. Generated 2025-10-07 
+          IG &copy; 2025+ DIPS AS.  Package dips.fhir.retinaintegration#0.1.2 based on FHIR 4.0.1. Generated 2025-10-19 
           
           
                       Links: Table of Contents |
@@ -91,7 +113,7 @@ This material contains content that is copyright of SNOMED International. Implem
 )
       </li>
       <li>
-RetinaIntegration - Local Development build (v0.1.1) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the Directory of published versions (        <a href="toc.html">src</a>
+RetinaIntegration - Local Development build (v0.1.2) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the Directory of published versions (        <a href="toc.html">src</a>
 )
       </li>
     </ul>
@@ -110,7 +132,7 @@ RetinaIntegration - Local Development build (v0.1.1) built by the FHIR (HL7&reg;
       </tr>
       <tr>
         <td>
-          <a href="Bundle-QueryResponseForExaminationsBetweenTwoDatesNoAI-Example.change.history.html">web</a>
+          <a href="Bundle-BundleWithSinglExamination-Example.change.history.html">web</a>
         </td>
         <td>
           <a href="http://dips.no/">dips.no</a>
@@ -118,8 +140,8 @@ RetinaIntegration - Local Development build (v0.1.1) built by the FHIR (HL7&reg;
         <td>
 
           IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://dips.no/">DIPS AS</a>
-.  Package dips.fhir.retinaintegration#0.1.1 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Tue, Oct 7, 2025 21:20+0200">2025-10-07</span>
+.  Package dips.fhir.retinaintegration#0.1.2 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, Oct 19, 2025 20:09+0200">2025-10-19</span>
 
                     <br/>
 

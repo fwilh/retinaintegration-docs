@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - RetinaIntegration v0.1.1</title>
+    <title>Artifacts Summary - RetinaIntegration v0.1.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">RetinaIntegration</span>
             <br/>
-            <span style="display:inline-block;">0.1.1 - ci-build
+            <span style="display:inline-block;">0.1.2 - ci-build
 
 
             </span>
@@ -117,7 +117,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">RetinaIntegration - Local Development build (v0.1.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/RetinaIntegration/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">RetinaIntegration - Local Development build (v0.1.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://dips.no/fhir/RetinaIntegration/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -147,7 +147,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#6">Terminology: Code Systems</a>
       </li>
       <li>
-         <a href="#7">Example: Example Instances</a>
+         <a href="#7">Terminology: Naming Systems</a>
+      </li>
+      <li>
+         <a href="#8">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -180,11 +183,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="OperationDefinition-diagnosticreport-append-retina-ai-result.html"
-                  title="OperationDefinition/diagnosticreport-append-retina-ai-result">DIPSRetinaAppendOperationDefinition</a>
+               <a href="OperationDefinition-append-retina-ai-result.html"
+                  title="OperationDefinition/append-retina-ai-result">DIPSRetinaAppendOperationDefinition</a>
             </td>
             <td>
-<p>OperationDefinition for appending retina AI reults to existing DiagnosticReport</p>
+<p>OperationDefinition for appending retina AI results to existing DiagnosticReport</p>
 </td>
          </tr>
       </tbody>
@@ -201,13 +204,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/RetinaDiagnosticReport">DiagnosticReport for Retinascreening</a>
             </td>
             <td>
-<p>This profile can send results from retinascreening</p>
+<p>This report contains the results from a retina screening examination.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-RetinaObservation.html"
-                  title="StructureDefinition/RetinaObservation">Observation for Retinascreening</a>
+                  title="StructureDefinition/RetinaObservation">Observation for retina screening</a>
             </td>
             <td>
 <p>This is observations connected to RetinaDiagnosticReport</p>
@@ -242,7 +245,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-ki-productname-extension.html"
-                  title="StructureDefinition/ki-productname-extension">KI Product Name ekstensjon</a>
+                  title="StructureDefinition/ki-productname-extension">KI Product Name extension</a>
             </td>
             <td>
 
@@ -251,7 +254,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-ki-protokoll-extension.html"
-                  title="StructureDefinition/ki-protokoll-extension">KI protokoll extensjon</a>
+                  title="StructureDefinition/ki-protokoll-extension">KI protokoll</a>
             </td>
             <td>
 
@@ -260,10 +263,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-ki-versjon-algoritme-extension.html"
-                  title="StructureDefinition/ki-versjon-algoritme-extension">KI versjon algoritme extensjon</a>
+                  title="StructureDefinition/ki-versjon-algoritme-extension">KI versjon algoritme</a>
             </td>
             <td>
 
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-videre-forlop-extension.html"
+                  title="StructureDefinition/videre-forlop-extension">Neste skritt i forløpet.</a>
+            </td>
+            <td>
+<p>Angir videre forløp</p>
 </td>
          </tr>
          <tr>
@@ -273,15 +285,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Angir om et tiltak er primært eller sekundært</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-videre-forlop-extension.html"
-                  title="StructureDefinition/videre-forlop-extension">Videre forløpsstudie Retina</a>
-            </td>
-            <td>
-<p>Angir videre forløp</p>
 </td>
          </tr>
       </tbody>
@@ -307,7 +310,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="ValueSet/retina-imagequality-vs">Image Quality ValueSet for Retinascreening</a>
             </td>
             <td>
-
+<p>Image quality as interpreted by an AI solution.</p>
 </td>
          </tr>
          <tr>
@@ -350,7 +353,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="CodeSystem/retina-imagequality-cs">Image Quality CodeSystem for Retinascreening</a>
             </td>
             <td>
-
+<p>Image quality as interpreted by an AI solution.</p>
 </td>
          </tr>
          <tr>
@@ -360,6 +363,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-no-kodeverk-8660.html"
+                  title="CodeSystem/no-kodeverk-8660">NO Kodeverk 8660</a>
+            </td>
+            <td>
+<p>Tjenestetyper. Benyttes primært i forbindelse med rekvisisjoner og svarrapporter innenfor lab og røntgen.</p>
 </td>
          </tr>
          <tr>
@@ -383,6 +395,32 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </tbody>
    </table>
    <a name="7"> </a>
+   <h3>Terminology: Naming Systems </h3>
+    <p>These define identifier and/or code system identities used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-retina-examination-id.html"
+                  title="NamingSystem/retina-examination-id">Retina examination identifier NamingSystem</a>
+            </td>
+            <td>
+<p>NamingSystem that documents the canonical URL used for retina-examination-id identifiers in DIPS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-retina-observation-id.html"
+                  title="NamingSystem/retina-observation-id">Retina observation identifier NamingSystem</a>
+            </td>
+            <td>
+<p>NamingSystem that documents the canonical URL used for retina-observation-id identifiers in DIPS.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="8"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -390,11 +428,54 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="DiagnosticReport-aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee.html"
-                  title="DiagnosticReport/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee">NotificationFromDIPS-Example</a>
+               <a href="Bundle-BundleWithSinglExamination-Example.html"
+                  title="Bundle/BundleWithSinglExamination-Example">BundleWithSinglExamination-Example</a>
+            </td>
+            <td>
+<p>Result of query for a specific examination idfentified by ID containing no AI result.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-BundleWithSingleExaminationAndAI-Example.html"
+                  title="Bundle/BundleWithSingleExaminationAndAI-Example">BundleWithSingleExaminationAndAI-Example</a>
+            </td>
+            <td>
+<p>Example response containing a single diagnostic report containing AI result.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-BundleWithTwoExaminations-Example.html"
+                  title="Bundle/BundleWithTwoExaminations-Example">BundleWithTwoExaminations-Example</a>
+            </td>
+            <td>
+<p>Result of query for examinations between two dates, not containing AI result. Note: The resource references in this example are not correct.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DiagnosticReport-bb2690e7-ca9f-4070-9c35-c7e36976b144.html"
+                  title="DiagnosticReport/bb2690e7-ca9f-4070-9c35-c7e36976b144">NotificationFromDIPS-Example</a>
             </td>
             <td>
 <p>Notifikasjon fra DIPS</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-cdp1123122.html" title="Patient/cdp1123122">Patient-cdp1123122</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-cdp1123123.html" title="Patient/cdp1123123">Patient-cdp1123123</a>
+            </td>
+            <td>
+
 </td>
          </tr>
          <tr>
@@ -403,33 +484,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Example request from Pega to append AI results to existing DiagnosticReport</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Bundle-QueryResponseForExaminationsBetweenTwoDatesNoAI-Example.html"
-                  title="Bundle/QueryResponseForExaminationsBetweenTwoDatesNoAI-Example">QueryResponseForExaminationsBetweenTwoDatesNoAI-Example</a>
-            </td>
-            <td>
-<p>Result of query for xaminations bwetween two dates, not containing AI result. Note: The resource references in this example are not correct.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Bundle-QueryResponseForSpecificExaminationNoAI-Example.html"
-                  title="Bundle/QueryResponseForSpecificExaminationNoAI-Example">QueryResponseForSpecificExaminationNoAI-Example</a>
-            </td>
-            <td>
-<p>Result of query for a specific examination idfentified by ID containing no AI result.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Bundle-QueryResponseWithSingleExaminationAndAI-Example.html"
-                  title="Bundle/QueryResponseWithSingleExaminationAndAI-Example">QueryResponseWithSingleExaminationAndAI-Example</a>
-            </td>
-            <td>
-<p>Example response containing a single diagnostic report containing AI result.</p>
 </td>
          </tr>
       </tbody>
@@ -452,7 +506,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://dips.no/">DIPS AS</a>.  Package dips.fhir.retinaintegration#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 7, 2025 21:20+0200">2025-10-07</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://dips.no/">DIPS AS</a>.  Package dips.fhir.retinaintegration#0.1.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Oct 19, 2025 20:09+0200">2025-10-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide dips.fhir.retinaintegration</b></p><a name=\"dips.fhir.retinaintegration\"> </a><a name=\"hcdips.fhir.retinaintegration\"> </a><h2>RetinaIntegration</h2><p>The official URL for this implementation guide is: </p><pre>http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration</pre><div><p>RetinaIntegration integrates DIPS EyeCare-Retinopathy with external AI system</p>\n</div></div>"
   },
   "url" : "http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration",
-  "version" : "0.1.1",
+  "version" : "0.1.2",
   "name" : "RetinaIntegration",
   "title" : "RetinaIntegration",
   "status" : "draft",
-  "date" : "2025-10-07T21:19:45+02:00",
+  "date" : "2025-10-19T20:08:40+02:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",
@@ -67,6 +67,17 @@
       {
         "url" : "value",
         "valueString" : "ci-build"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -352,6 +363,17 @@
     {
       "extension" : [{
         "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueCode" : "autoload-resources"
       },
       {
@@ -605,6 +627,42 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/BundleWithSingleExaminationAndAI-Example"
+      },
+      "name" : "BundleWithSingleExaminationAndAI-Example",
+      "description" : "Example response containing a single diagnostic report containing AI result.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/BundleWithSinglExamination-Example"
+      },
+      "name" : "BundleWithSinglExamination-Example",
+      "description" : "Result of query for a specific examination idfentified by ID containing no AI result.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/BundleWithTwoExaminations-Example"
+      },
+      "name" : "BundleWithTwoExaminations-Example",
+      "description" : "Result of query for examinations between two dates, not containing AI result. Note: The resource references in this example are not correct.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -623,7 +681,7 @@
         "reference" : "StructureDefinition/RetinaDiagnosticReport"
       },
       "name" : "DiagnosticReport for Retinascreening",
-      "description" : "This profile can send results from retinascreening",
+      "description" : "This report contains the results from a retina screening examination.",
       "exampleBoolean" : false
     },
     {
@@ -632,10 +690,10 @@
         "valueString" : "OperationDefinition"
       }],
       "reference" : {
-        "reference" : "OperationDefinition/diagnosticreport-append-retina-ai-result"
+        "reference" : "OperationDefinition/append-retina-ai-result"
       },
       "name" : "DIPSRetinaAppendOperationDefinition",
-      "description" : "OperationDefinition for appending retina AI reults to existing DiagnosticReport",
+      "description" : "OperationDefinition for appending retina AI results to existing DiagnosticReport",
       "exampleBoolean" : false
     },
     {
@@ -682,6 +740,7 @@
         "reference" : "CodeSystem/retina-imagequality-cs"
       },
       "name" : "Image Quality CodeSystem for Retinascreening",
+      "description" : "Image quality as interpreted by an AI solution.",
       "exampleBoolean" : false
     },
     {
@@ -693,6 +752,7 @@
         "reference" : "ValueSet/retina-imagequality-vs"
       },
       "name" : "Image Quality ValueSet for Retinascreening",
+      "description" : "Image quality as interpreted by an AI solution.",
       "exampleBoolean" : false
     },
     {
@@ -703,7 +763,7 @@
       "reference" : {
         "reference" : "StructureDefinition/ki-productname-extension"
       },
-      "name" : "KI Product Name ekstensjon",
+      "name" : "KI Product Name extension",
       "exampleBoolean" : false
     },
     {
@@ -714,7 +774,7 @@
       "reference" : {
         "reference" : "StructureDefinition/ki-protokoll-extension"
       },
-      "name" : "KI protokoll extensjon",
+      "name" : "KI protokoll",
       "exampleBoolean" : false
     },
     {
@@ -725,7 +785,7 @@
       "reference" : {
         "reference" : "StructureDefinition/ki-versjon-algoritme-extension"
       },
-      "name" : "KI versjon algoritme extensjon",
+      "name" : "KI versjon algoritme",
       "exampleBoolean" : false
     },
     {
@@ -743,10 +803,34 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/videre-forlop-extension"
+      },
+      "name" : "Neste skritt i forløpet.",
+      "description" : "Angir videre forløp",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/no-kodeverk-8660"
+      },
+      "name" : "NO Kodeverk 8660",
+      "description" : "Tjenestetyper. Benyttes primært i forbindelse med rekvisisjoner og svarrapporter innenfor lab og røntgen.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "DiagnosticReport"
       }],
       "reference" : {
-        "reference" : "DiagnosticReport/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+        "reference" : "DiagnosticReport/bb2690e7-ca9f-4070-9c35-c7e36976b144"
       },
       "name" : "NotificationFromDIPS-Example",
       "description" : "Notifikasjon fra DIPS",
@@ -760,9 +844,31 @@
       "reference" : {
         "reference" : "StructureDefinition/RetinaObservation"
       },
-      "name" : "Observation for Retinascreening",
+      "name" : "Observation for retina screening",
       "description" : "This is observations connected to RetinaDiagnosticReport",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/cdp1123122"
+      },
+      "name" : "Patient-cdp1123122",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/cdp1123123"
+      },
+      "name" : "Patient-cdp1123123",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -779,42 +885,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/QueryResponseForExaminationsBetweenTwoDatesNoAI-Example"
-      },
-      "name" : "QueryResponseForExaminationsBetweenTwoDatesNoAI-Example",
-      "description" : "Result of query for xaminations bwetween two dates, not containing AI result. Note: The resource references in this example are not correct.",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/QueryResponseForSpecificExaminationNoAI-Example"
-      },
-      "name" : "QueryResponseForSpecificExaminationNoAI-Example",
-      "description" : "Result of query for a specific examination idfentified by ID containing no AI result.",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/QueryResponseWithSingleExaminationAndAI-Example"
-      },
-      "name" : "QueryResponseWithSingleExaminationAndAI-Example",
-      "description" : "Example response containing a single diagnostic report containing AI result.",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -822,6 +892,30 @@
       },
       "name" : "Rapport for Retina-screening",
       "description" : "Rapporttype bildediagnsotikk fra Volven 8660",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/retina-examination-id"
+      },
+      "name" : "Retina examination identifier NamingSystem",
+      "description" : "NamingSystem that documents the canonical URL used for retina-examination-id identifiers in DIPS.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/retina-observation-id"
+      },
+      "name" : "Retina observation identifier NamingSystem",
+      "description" : "NamingSystem that documents the canonical URL used for retina-observation-id identifiers in DIPS.",
       "exampleBoolean" : false
     },
     {
@@ -882,18 +976,6 @@
       },
       "name" : "Verdisett for videre forløpsstudie",
       "description" : "Verdisett som beskriver videre forløp for Retinascreening.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/videre-forlop-extension"
-      },
-      "name" : "Videre forløpsstudie Retina",
-      "description" : "Angir videre forløp",
       "exampleBoolean" : false
     }],
     "page" : {

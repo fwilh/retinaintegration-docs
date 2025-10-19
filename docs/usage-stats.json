@@ -1,32 +1,32 @@
 {
   "package": "dips.fhir.retinaintegration",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
       "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/frist-nesteundersokelse-extension",
       "title": "Frist neste undersøkelse",
       "types": [
-        "date"
+        "integer"
       ]
     },
     {
       "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-productname-extension",
-      "title": "KI Product Name ekstensjon",
+      "title": "KI Product Name extension",
       "types": [
         "string"
       ]
     },
     {
       "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-protokoll-extension",
-      "title": "KI protokoll extensjon",
+      "title": "KI protokoll",
       "types": [
         "string"
       ]
     },
     {
       "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-versjon-algoritme-extension",
-      "title": "KI versjon algoritme extensjon",
+      "title": "KI versjon algoritme",
       "types": [
         "string"
       ]
@@ -47,7 +47,7 @@
     },
     {
       "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension",
-      "title": "Videre forløpsstudie Retina",
+      "title": "Neste skritt i forløpet.",
       "types": [
         "CodeableConcept"
       ]
@@ -63,7 +63,7 @@
     "Observation": [
       {
         "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation",
-        "title": "Observation for Retinascreening"
+        "title": "Observation for retina screening"
       }
     ]
   },
@@ -92,7 +92,14 @@
       "DiagnosticReport"
     ],
     "http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension": [
-      "Bundle.entry.resource"
+      "Bundle.entry.resource",
+      "DiagnosticReport"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url": [
+      "NamingSystem"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version": [
+      "NamingSystem"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"

@@ -3,14 +3,15 @@
   "id" : "diagnosticreport-codes-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet diagnosticreport-codes-vs</b></p><a name=\"diagnosticreport-codes-vs\"> </a><a name=\"hcdiagnosticreport-codes-vs\"> </a><ul><li>Include all codes defined in <code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660</code> version <span title=\"Version is not explicity stated. No matching Code System found\">Not Stated (use latest from terminology server)</span></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet diagnosticreport-codes-vs</b></p><a name=\"diagnosticreport-codes-vs\"> </a><a name=\"hcdiagnosticreport-codes-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-no-kodeverk-8660.html\"><code>http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.2</span></li></ul></div>"
   },
   "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/diagnosticreport-codes-vs",
-  "version" : "0.1.1",
+  "version" : "0.1.2",
   "name" : "DiagnosticReportCodes",
   "title" : "Rapport for Retina-screening",
   "status" : "draft",
-  "date" : "2025-10-07T21:19:45+02:00",
+  "experimental" : true,
+  "date" : "2025-10-19T20:08:40+02:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",

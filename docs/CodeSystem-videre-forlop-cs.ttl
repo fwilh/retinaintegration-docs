@@ -11,14 +11,15 @@
   fhir:id [ fhir:v "videre-forlop-cs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem videre-forlop-cs</b></p><a name=\"videre-forlop-cs\"> </a><a name=\"hcvidere-forlop-cs\"> </a><p>This  code system <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">4001<a name=\"videre-forlop-cs-4001\"> </a></td><td>A</td></tr><tr><td style=\"white-space:nowrap\">4002<a name=\"videre-forlop-cs-4002\"> </a></td><td>B</td></tr><tr><td style=\"white-space:nowrap\">4003<a name=\"videre-forlop-cs-4003\"> </a></td><td>C</td></tr><tr><td style=\"white-space:nowrap\">4004<a name=\"videre-forlop-cs-4004\"> </a></td><td>D</td></tr><tr><td style=\"white-space:nowrap\">4005<a name=\"videre-forlop-cs-4005\"> </a></td><td>E</td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem videre-forlop-cs</b></p><a name=\"videre-forlop-cs\"> </a><a name=\"hcvidere-forlop-cs\"> </a><p>This case-sensitive code system <code>http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">4001<a name=\"videre-forlop-cs-4001\"> </a></td><td>A</td></tr><tr><td style=\"white-space:nowrap\">4002<a name=\"videre-forlop-cs-4002\"> </a></td><td>B</td></tr><tr><td style=\"white-space:nowrap\">4003<a name=\"videre-forlop-cs-4003\"> </a></td><td>C</td></tr><tr><td style=\"white-space:nowrap\">4004<a name=\"videre-forlop-cs-4004\"> </a></td><td>D</td></tr><tr><td style=\"white-space:nowrap\">4005<a name=\"videre-forlop-cs-4005\"> </a></td><td>E</td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.1"] ; # 
+  fhir:version [ fhir:v "0.1.2"] ; # 
   fhir:name [ fhir:v "VidereForlopCodeSystem"] ; # 
   fhir:title [ fhir:v "Verdisett for videre forløp Retinascreening"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-07T21:19:45+02:00"^^xsd:dateTime] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-10-19T20:08:40+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DIPS AS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DIPS AS" ] ;
@@ -31,6 +32,7 @@
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "Verdisett som beskriver verdier for videre forløp Retinascreening"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
   fhir:content [ fhir:v "complete"] ; # 
   fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
   fhir:concept ( [

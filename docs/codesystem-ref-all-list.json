@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "draft",
       "name" : "RetinaConclusionCodesystem",
       "title" : "Kodeverk for konklusjon Retina",
@@ -13,18 +13,18 @@
     },
     {
       "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "active",
       "name" : "RetinaImageQualityCodesystem",
       "title" : "Image Quality CodeSystem for Retinascreening",
-      "description" : "",
+      "description" : "Image quality as interpreted by an AI solution.",
       "uses" : {
       },
       "ValueSet-retina-imagequality-vs.html" : "Image Quality ValueSet for Retinascreening"
     },
     {
       "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "draft",
       "name" : "TiltakStatusForrigeUndersokelseCodeSystem",
       "title" : "Verdisett for tiltaksstatus neste undersøkelse",
@@ -35,7 +35,7 @@
     },
     {
       "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "draft",
       "name" : "VidereForlopCodeSystem",
       "title" : "Verdisett for videre forløp Retinascreening",
@@ -43,6 +43,17 @@
       "uses" : {
       },
       "ValueSet-videre-forlop-vs.html" : "Verdisett for videre forløpsstudie"
+    },
+    {
+      "url" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660",
+      "version" : "0.1.2",
+      "status" : "draft",
+      "name" : "NOKodeverk8660",
+      "title" : "NO Kodeverk 8660",
+      "description" : "Tjenestetyper. Benyttes primært i forbindelse med rekvisisjoner og svarrapporter innenfor lab og røntgen.",
+      "uses" : {
+      },
+      "ValueSet-diagnosticreport-codes-vs.html" : "Rapport for Retina-screening"
     },
     {
       "url" : "http://hl7.org/fhir/diagnostic-report-status",
@@ -55,6 +66,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-diagnostic-report-status.html" : "DiagnosticReportStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "oids" : ["2.16.840.1.113883.4.642.4.58"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-identifier-use.html" : "IdentifierUse"
     },
     {
       "url" : "http://hl7.org/fhir/observation-status",
@@ -141,6 +164,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-diagnostic-service-sections.html" : "Diagnostic Service Section Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "IdentifierType",
+      "title" : "identifierType",
+      "description" : "HL7-defined code system of concepts specifying type of identifier. Used in HL7 Version 2.x messaging data types CX, PLN, PPN, XCN and XON.",
+      "oids" : ["2.16.840.1.113883.18.108"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",

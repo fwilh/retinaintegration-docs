@@ -6,7 +6,7 @@
     <name value="dme-right-eye"/>
     <resource>
       <Observation>
-        <id value="Bilde1DMEhoyre"/>
+        <id value="ObservationDmeRight-input"/>
         <meta>
           <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"/>
         </meta>
@@ -15,16 +15,18 @@
           <coding>
             <system value="http://snomed.info/sct"/>
             <code value="312912001"/>
-            <display value="Diabetisk makulaødem"/>
+            <display value="Diabetic macular edema"/>
           </coding>
+          <text value="Diabetisk makulaødem"/>
         </code>
         <valueBoolean value="true"/>
         <bodySite>
           <coding>
             <system value="http://snomed.info/sct"/>
             <code value="5597008"/>
-            <display value="Høyre retina"/>
+            <display value="Retina of right eye"/>
           </coding>
+          <text value="Høyre retina"/>
         </bodySite>
       </Observation>
     </resource>
@@ -33,7 +35,7 @@
     <name value="dr-right-eye"/>
     <resource>
       <Observation>
-        <id value="Bilde1DRhoyre"/>
+        <id value="ObservationDrHoyre-input"/>
         <meta>
           <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"/>
         </meta>
@@ -42,8 +44,9 @@
           <coding>
             <system value="http://snomed.info/sct"/>
             <code value="4855003"/>
-            <display value="Diabetsk retinopati"/>
+            <display value="DR - Diabetic retinopathy"/>
           </coding>
+          <text value="Diabetsk retinopati"/>
         </code>
         <valueQuantity>
           <value value="5"/>
@@ -52,8 +55,9 @@
           <coding>
             <system value="http://snomed.info/sct"/>
             <code value="5597008"/>
-            <display value="Høyre retina"/>
+            <display value="Retina of right eye"/>
           </coding>
+          <text value="Høyre retina"/>
         </bodySite>
       </Observation>
     </resource>
@@ -62,7 +66,7 @@
     <name value="dme-left-eye"/>
     <resource>
       <Observation>
-        <id value="Bilde1DMEvenstre"/>
+        <id value="ObservationDmeLeft-input"/>
         <meta>
           <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"/>
         </meta>
@@ -71,16 +75,18 @@
           <coding>
             <system value="http://snomed.info/sct"/>
             <code value="312912001"/>
-            <display value="Diabetisk makulaødem"/>
+            <display value="Diabetic macular edema"/>
           </coding>
+          <text value="Diabetisk makulaødem"/>
         </code>
         <valueBoolean value="true"/>
         <bodySite>
           <coding>
             <system value="http://snomed.info/sct"/>
             <code value="58443009"/>
-            <display value="Venstre retina"/>
+            <display value="Retina of left eye"/>
           </coding>
+          <text value="Venstre retina"/>
         </bodySite>
       </Observation>
     </resource>
@@ -89,7 +95,7 @@
     <name value="dr-left-eye"/>
     <resource>
       <Observation>
-        <id value="Bilde1DRvenstre"/>
+        <id value="ObservationDrLeft-input"/>
         <meta>
           <profile value="http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation"/>
         </meta>
@@ -98,20 +104,25 @@
           <coding>
             <system value="http://snomed.info/sct"/>
             <code value="4855003"/>
-            <display value="Diabetsk retinopati"/>
+            <display value="DR - Diabetic retinopathy"/>
           </coding>
+          <text value="Diabetsk retinopati"/>
         </code>
         <dataAbsentReason>
           <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/data-absent-reason"/>
             <code value="not-asked"/>
+            <display value="Not asked"/>
           </coding>
+          <text value="Ikke spurt"/>
         </dataAbsentReason>
         <bodySite>
           <coding>
             <system value="http://snomed.info/sct"/>
             <code value="58443009"/>
-            <display value="Venstre retina"/>
+            <display value="Retina of left eye"/>
           </coding>
+          <text value="Venstre retina"/>
         </bodySite>
       </Observation>
     </resource>
@@ -139,7 +150,7 @@
   <parameter>
     <name value="full-ki-report"/>
     <valueAttachment>
-      <contentType value="text/json"/>
+      <contentType value="text/plain"/>
       <data value="Base64binary"/>
       <title value="Full AI report"/>
     </valueAttachment>
@@ -148,7 +159,7 @@
     <name value="imageDescriptions"/>
     <resource>
       <ImagingStudy>
-        <id value="Bilde1Sectra"/>
+        <id value="ImagingStudySectra-1"/>
         <status value="available"/>
         <subject>
           <identifier>
@@ -164,7 +175,7 @@
     <name value="conclusionCode"/>
     <valueCodeableConcept>
       <coding>
-        <system value="http://helse-sorost.no/fhir/CodeSystem/retina-conclusioncode-cs"/>
+        <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs"/>
         <code value="1001"/>
         <display value="Gradering ferdig"/>
       </coding>

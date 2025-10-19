@@ -3,14 +3,15 @@
   "id" : "retina-imagequality-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet retina-imagequality-vs</b></p><a name=\"retina-imagequality-vs\"> </a><a name=\"hcretina-imagequality-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-retina-imagequality-cs.html\"><code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs</code></a> version <span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\">&#x1F4E6;0.1.1</span></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet retina-imagequality-vs</b></p><a name=\"retina-imagequality-vs\"> </a><a name=\"hcretina-imagequality-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-retina-imagequality-cs.html\"><code>http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.2</span></li></ul></div>"
   },
   "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imagequality-vs",
-  "version" : "0.1.1",
+  "version" : "0.1.2",
   "name" : "RetinaImageQualityValueSet",
   "title" : "Image Quality ValueSet for Retinascreening",
   "status" : "draft",
-  "date" : "2025-10-07T21:19:45+02:00",
+  "experimental" : true,
+  "date" : "2025-10-19T20:08:40+02:00",
   "publisher" : "DIPS AS",
   "contact" : [{
     "name" : "DIPS AS",
@@ -23,6 +24,8 @@
       "value" : "teamsolsiden@dips.no"
     }]
   }],
+  "description" : "Image quality as interpreted by an AI solution.",
+  "purpose" : "For documentation of image quality as interpreted by an AI solution for automated assessment of retinal images for DR, if applicable.",
   "compose" : {
     "include" : [{
       "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs"

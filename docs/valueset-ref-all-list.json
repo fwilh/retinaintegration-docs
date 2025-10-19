@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/diagnosticreport-codes-vs",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "draft",
       "name" : "DiagnosticReportCodes",
       "title" : "Rapport for Retina-screening",
@@ -14,7 +14,7 @@
     },
     {
       "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusioncode-vs",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "draft",
       "name" : "RetinaConclusionCodeValueset",
       "title" : "Conclusion Code ValueSet for Retinascreening",
@@ -28,11 +28,11 @@
     },
     {
       "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imagequality-vs",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "draft",
       "name" : "RetinaImageQualityValueSet",
       "title" : "Image Quality ValueSet for Retinascreening",
-      "description" : "",
+      "description" : "Image quality as interpreted by an AI solution.",
       "systems" : [
         "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs"
       ],
@@ -42,7 +42,7 @@
     },
     {
       "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/tiltaksstatus-forrigeUndersokelse-vs",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "draft",
       "name" : "TiltaksstatusForrigeUndersokelseValueSet",
       "title" : "Verdisett for tiltaksstatus neste undersøkelse",
@@ -56,7 +56,7 @@
     },
     {
       "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/videre-forlop-vs",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "draft",
       "name" : "VidereForlopValueSet",
       "title" : "Verdisett for videre forløpsstudie",
@@ -66,7 +66,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-videre-forlop-extension.html" : "Videre forløpsstudie Retina"
+      "StructureDefinition-videre-forlop-extension.html" : "Neste skritt i forløpet."
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/body-site",
@@ -80,7 +80,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-RetinaObservation.html" : "Observation for Retinascreening"
+      "StructureDefinition-RetinaObservation.html" : "Observation for retina screening"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
@@ -94,7 +94,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-RetinaObservation.html" : "Observation for Retinascreening"
+      "StructureDefinition-RetinaObservation.html" : "Observation for retina screening"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/diagnostic-report-status",
@@ -125,6 +125,34 @@
       "StructureDefinition-RetinaDiagnosticReport.html" : "DiagnosticReport for Retinascreening"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Identifier Type Codes",
+      "title" : "IdentifierType",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "StructureDefinition-RetinaDiagnosticReport.html" : "DiagnosticReport for Retinascreening"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-RetinaDiagnosticReport.html" : "DiagnosticReport for Retinascreening"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
       "version" : "4.0.1",
       "status" : "draft",
@@ -136,7 +164,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-RetinaObservation.html" : "Observation for Retinascreening",
+      "StructureDefinition-RetinaObservation.html" : "Observation for retina screening",
       "StructureDefinition-RetinaDiagnosticReport.html" : "DiagnosticReport for Retinascreening"
     },
     {
@@ -151,7 +179,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.403"],
       "uses" : {
       },
-      "StructureDefinition-RetinaObservation.html" : "Observation for Retinascreening"
+      "StructureDefinition-RetinaObservation.html" : "Observation for retina screening"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -165,7 +193,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.396"],
       "uses" : {
       },
-      "StructureDefinition-RetinaObservation.html" : "Observation for Retinascreening"
+      "StructureDefinition-RetinaObservation.html" : "Observation for retina screening"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -181,7 +209,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
-      "StructureDefinition-RetinaObservation.html" : "Observation for Retinascreening"
+      "StructureDefinition-RetinaObservation.html" : "Observation for retina screening"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -195,7 +223,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
-      "StructureDefinition-RetinaObservation.html" : "Observation for Retinascreening"
+      "StructureDefinition-RetinaObservation.html" : "Observation for retina screening"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -209,7 +237,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
-      "StructureDefinition-RetinaObservation.html" : "Observation for Retinascreening"
+      "StructureDefinition-RetinaObservation.html" : "Observation for retina screening"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
@@ -226,7 +254,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
-      "StructureDefinition-RetinaObservation.html" : "Observation for Retinascreening"
+      "StructureDefinition-RetinaObservation.html" : "Observation for retina screening"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -242,7 +270,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
-      "StructureDefinition-RetinaObservation.html" : "Observation for Retinascreening"
+      "StructureDefinition-RetinaObservation.html" : "Observation for retina screening"
     }
   ]
 }

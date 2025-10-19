@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "draft",
       "name" : "RetinaConclusionCodesystem",
       "title" : "Kodeverk for konklusjon Retina",
@@ -13,18 +13,18 @@
     },
     {
       "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "active",
       "name" : "RetinaImageQualityCodesystem",
       "title" : "Image Quality CodeSystem for Retinascreening",
-      "description" : "",
+      "description" : "Image quality as interpreted by an AI solution.",
       "uses" : {
       },
       "ValueSet-retina-imagequality-vs.html" : "Image Quality ValueSet for Retinascreening"
     },
     {
       "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "draft",
       "name" : "TiltakStatusForrigeUndersokelseCodeSystem",
       "title" : "Verdisett for tiltaksstatus neste undersøkelse",
@@ -35,7 +35,7 @@
     },
     {
       "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs",
-      "version" : "0.1.1",
+      "version" : "0.1.2",
       "status" : "draft",
       "name" : "VidereForlopCodeSystem",
       "title" : "Verdisett for videre forløp Retinascreening",
@@ -43,6 +43,17 @@
       "uses" : {
       },
       "ValueSet-videre-forlop-vs.html" : "Verdisett for videre forløpsstudie"
+    },
+    {
+      "url" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660",
+      "version" : "0.1.2",
+      "status" : "draft",
+      "name" : "NOKodeverk8660",
+      "title" : "NO Kodeverk 8660",
+      "description" : "Tjenestetyper. Benyttes primært i forbindelse med rekvisisjoner og svarrapporter innenfor lab og røntgen.",
+      "uses" : {
+      },
+      "ValueSet-diagnosticreport-codes-vs.html" : "Rapport for Retina-screening"
     }
   ]
 }
