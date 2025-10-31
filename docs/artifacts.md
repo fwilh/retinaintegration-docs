@@ -1,4 +1,4 @@
-# Artifacts Summary - RetinaIntegration v0.1.2
+# Artifacts Summary - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**
@@ -30,6 +30,9 @@ These define constraints on FHIR resources for systems conforming to this implem
 | | |
 | :--- | :--- |
 | [DiagnosticReport for Retinascreening](StructureDefinition-RetinaDiagnosticReport.md) | This report contains the results from a retina screening examination. |
+| [FundusFotografiObservation](StructureDefinition-fundus-foto-observation.md) |  |
+| [HbA1cObservation](StructureDefinition-hba1c-observation.md) |  |
+| [OCTObservation](StructureDefinition-oct-observation.md) |  |
 | [Observation for retina screening](StructureDefinition-RetinaObservation.md) | This is observations connected to RetinaDiagnosticReport |
 
 ### Structures: Extension Definitions 

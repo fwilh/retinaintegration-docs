@@ -1,4 +1,4 @@
-# Kodeverk for konklusjon Retina - RetinaIntegration v0.1.2
+# Kodeverk for konklusjon Retina - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs | *Version*:0.1.2 |
-| Draft as of 2025-10-19 | *Computable Name*:RetinaConclusionCodesystem |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs | *Version*:0.1.3 |
+| Draft as of 2025-10-31 | *Computable Name*:RetinaConclusionCodesystem |
 
  
 Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening 
@@ -27,12 +27,12 @@ Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for R
   "resourceType" : "CodeSystem",
   "id" : "retina-conclusioncode-cs",
   "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs",
-  "version" : "0.1.2",
+  "version" : "0.1.3",
   "name" : "RetinaConclusionCodesystem",
   "title" : "Kodeverk for konklusjon Retina",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-10-19T20:08:40+02:00",
+  "date" : "2025-10-31T08:54:10+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {

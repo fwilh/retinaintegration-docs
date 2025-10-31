@@ -1,4 +1,4 @@
-# Verdisett for tiltaksstatus neste undersøkelse - RetinaIntegration v0.1.2
+# Verdisett for tiltaksstatus neste undersøkelse - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/RetinaIntegration/ValueSet/tiltaksstatus-forrigeUndersokelse-vs | *Version*:0.1.2 |
-| Draft as of 2025-10-19 | *Computable Name*:TiltaksstatusForrigeUndersokelseValueSet |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/ValueSet/tiltaksstatus-forrigeUndersokelse-vs | *Version*:0.1.3 |
+| Draft as of 2025-10-31 | *Computable Name*:TiltaksstatusForrigeUndersokelseValueSet |
 
  
 Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for Retinascreening 
@@ -20,7 +20,7 @@ Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for R
 
 ### Logical Definition (CLD)
 
-* Include all codes defined in [`http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs`](CodeSystem-tiltakstatus-nesteundersokelse-cs.md)version 📦0.1.2
+* Include all codes defined in [`http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs`](CodeSystem-tiltakstatus-nesteundersokelse-cs.md)version 📦0.1.3
 
  
 
@@ -48,12 +48,12 @@ Verdisett som beskriver verdier for forløpsstatus for neste undersøkelse for R
   "resourceType" : "ValueSet",
   "id" : "tiltaksstatus-forrigeUndersokelse-vs",
   "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/tiltaksstatus-forrigeUndersokelse-vs",
-  "version" : "0.1.2",
+  "version" : "0.1.3",
   "name" : "TiltaksstatusForrigeUndersokelseValueSet",
   "title" : "Verdisett for tiltaksstatus neste undersøkelse",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-10-19T20:08:40+02:00",
+  "date" : "2025-10-31T08:54:10+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {

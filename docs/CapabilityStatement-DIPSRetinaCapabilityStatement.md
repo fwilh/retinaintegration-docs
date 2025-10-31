@@ -1,4 +1,4 @@
-# DIPSRetinaCapabilityStatement - RetinaIntegration v0.1.2
+# DIPSRetinaCapabilityStatement - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/RetinaIntegration/CapabilityStatement/DIPSRetinaCapabilityStatement | *Version*:0.1.2 |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/CapabilityStatement/DIPSRetinaCapabilityStatement | *Version*:0.1.3 |
 | Active as of 2025-09-30 | *Computable Name*: |
 
  
@@ -18,7 +18,7 @@ CapabilityStatement for DIPS Retinaflyt
 
 ## 
 
-* Implementation Guide Version: 0.1.2 
+* Implementation Guide Version: 0.1.3 
 * FHIR Version: 4.0.1 
 * Supported Formats: `xml`, `json`
 * Published on: 2025-09-30 12:00:00+0000 
@@ -77,7 +77,7 @@ Interaction summary
   "resourceType" : "CapabilityStatement",
   "id" : "DIPSRetinaCapabilityStatement",
   "url" : "http://dips.no/fhir/RetinaIntegration/CapabilityStatement/DIPSRetinaCapabilityStatement",
-  "version" : "0.1.2",
+  "version" : "0.1.3",
   "status" : "active",
   "date" : "2025-09-30T12:00:00Z",
   "publisher" : "DIPS AS",

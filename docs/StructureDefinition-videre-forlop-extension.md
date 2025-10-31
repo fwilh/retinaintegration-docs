@@ -1,4 +1,4 @@
-# Neste skritt i forløpet. - RetinaIntegration v0.1.2
+# Neste skritt i forløpet. - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension | *Version*:0.1.2 |
-| Active as of 2025-10-19 | *Computable Name*:RetinaVidereForlopExtension |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension | *Version*:0.1.3 |
+| Active as of 2025-10-31 | *Computable Name*:RetinaVidereForlopExtension |
 
 Angir videre forløp
 
@@ -45,12 +45,12 @@ Other representations of profile: [CSV](StructureDefinition-videre-forlop-extens
   "resourceType" : "StructureDefinition",
   "id" : "videre-forlop-extension",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/videre-forlop-extension",
-  "version" : "0.1.2",
+  "version" : "0.1.3",
   "name" : "RetinaVidereForlopExtension",
   "title" : "Neste skritt i forløpet.",
   "status" : "active",
   "experimental" : true,
-  "date" : "2025-10-19T20:08:40+02:00",
+  "date" : "2025-10-31T08:54:10+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {

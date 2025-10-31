@@ -1,6 +1,6 @@
 {
   "package": "dips.fhir.retinaintegration",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
@@ -64,6 +64,18 @@
       {
         "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation",
         "title": "Observation for retina screening"
+      },
+      {
+        "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/fundus-foto-observation",
+        "title": "FundusFotografiObservation"
+      },
+      {
+        "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/hba1c-observation",
+        "title": "HbA1cObservation"
+      },
+      {
+        "url": "http://dips.no/fhir/RetinaIntegration/StructureDefinition/oct-observation",
+        "title": "OCTObservation"
       }
     ]
   },

@@ -1,4 +1,4 @@
-# NO Kodeverk 8660 - RetinaIntegration v0.1.2
+# NO Kodeverk 8660 - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660 | *Version*:0.1.2 |
-| Draft as of 2025-10-19 | *Computable Name*:NOKodeverk8660 |
+| *Official URL*:http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660 | *Version*:0.1.3 |
+| Draft as of 2025-10-31 | *Computable Name*:NOKodeverk8660 |
 
  
 Tjenestetyper. Benyttes primært i forbindelse med rekvisisjoner og svarrapporter innenfor lab og røntgen. 
@@ -27,12 +27,12 @@ Tjenestetyper. Benyttes primært i forbindelse med rekvisisjoner og svarrapporte
   "resourceType" : "CodeSystem",
   "id" : "no-kodeverk-8660",
   "url" : "http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660",
-  "version" : "0.1.2",
+  "version" : "0.1.3",
   "name" : "NOKodeverk8660",
   "title" : "NO Kodeverk 8660",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-10-19T20:08:40+02:00",
+  "date" : "2025-10-31T08:54:10+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {

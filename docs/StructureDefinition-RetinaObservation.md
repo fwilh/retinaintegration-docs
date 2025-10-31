@@ -1,4 +1,4 @@
-# Observation for retina screening - RetinaIntegration v0.1.2
+# Observation for retina screening - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,15 +8,15 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation | *Version*:0.1.2 |
-| Draft as of 2025-10-19 | *Computable Name*:DIPSRetinaIntegrationObservation |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation | *Version*:0.1.3 |
+| Draft as of 2025-10-31 | *Computable Name*:DIPSRetinaIntegrationObservation |
 
  
 This is observations connected to RetinaDiagnosticReport 
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Derived from this Profile: [FundusFotografiObservation](StructureDefinition-fundus-foto-observation.md), [HbA1cObservation](StructureDefinition-hba1c-observation.md) and [OCTObservation](StructureDefinition-oct-observation.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/dips.fhir.retinaintegration|current/StructureDefinition/RetinaObservation)
 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-RetinaObservation.cs
   "resourceType" : "StructureDefinition",
   "id" : "RetinaObservation",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaObservation",
-  "version" : "0.1.2",
+  "version" : "0.1.3",
   "name" : "DIPSRetinaIntegrationObservation",
   "title" : "Observation for retina screening",
   "status" : "draft",
-  "date" : "2025-10-19T20:08:40+02:00",
+  "date" : "2025-10-31T08:54:10+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {

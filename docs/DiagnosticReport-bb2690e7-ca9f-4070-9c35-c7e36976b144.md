@@ -1,4 +1,4 @@
-# NotificationFromDIPS-Example - RetinaIntegration v0.1.2
+# NotificationFromDIPS-Example - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -29,6 +29,20 @@ Profile: [DiagnosticReport for Retinascreening](StructureDefinition-RetinaDiagno
       "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport"
     ]
   },
+  "extension" : [
+    {
+      "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/tiltaksstatus-forrige-undersokelse-extension",
+      "valueCodeableConcept" : {
+        "coding" : [
+          {
+            "system" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs",
+            "code" : "3002",
+            "display" : "Ny fotokontroll (sekundærgradering)"
+          }
+        ]
+      }
+    }
+  ],
   "identifier" : [
     {
       "system" : "http://dips.no/fhir/NamingSystem/retina-examination-id",

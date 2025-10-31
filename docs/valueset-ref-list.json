@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/diagnosticreport-codes-vs",
-      "version" : "0.1.2",
+      "version" : "0.1.3",
       "status" : "draft",
       "name" : "DiagnosticReportCodes",
       "title" : "Rapport for Retina-screening",
@@ -14,7 +14,7 @@
     },
     {
       "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusioncode-vs",
-      "version" : "0.1.2",
+      "version" : "0.1.3",
       "status" : "draft",
       "name" : "RetinaConclusionCodeValueset",
       "title" : "Conclusion Code ValueSet for Retinascreening",
@@ -28,7 +28,7 @@
     },
     {
       "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imagequality-vs",
-      "version" : "0.1.2",
+      "version" : "0.1.3",
       "status" : "draft",
       "name" : "RetinaImageQualityValueSet",
       "title" : "Image Quality ValueSet for Retinascreening",
@@ -42,7 +42,7 @@
     },
     {
       "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/tiltaksstatus-forrigeUndersokelse-vs",
-      "version" : "0.1.2",
+      "version" : "0.1.3",
       "status" : "draft",
       "name" : "TiltaksstatusForrigeUndersokelseValueSet",
       "title" : "Verdisett for tiltaksstatus neste undersøkelse",
@@ -56,7 +56,7 @@
     },
     {
       "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/videre-forlop-vs",
-      "version" : "0.1.2",
+      "version" : "0.1.3",
       "status" : "draft",
       "name" : "VidereForlopValueSet",
       "title" : "Verdisett for videre forløpsstudie",

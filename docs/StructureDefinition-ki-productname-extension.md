@@ -1,4 +1,4 @@
-# KI Product Name extension - RetinaIntegration v0.1.2
+# KI Product Name extension - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-productname-extension | *Version*:0.1.2 |
-| Draft as of 2025-10-19 | *Computable Name*:KIProductName |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-productname-extension | *Version*:0.1.3 |
+| Draft as of 2025-10-31 | *Computable Name*:KIProductName |
 
 **Context of Use**
 
@@ -41,12 +41,12 @@ Other representations of profile: [CSV](StructureDefinition-ki-productname-exten
   "resourceType" : "StructureDefinition",
   "id" : "ki-productname-extension",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-productname-extension",
-  "version" : "0.1.2",
+  "version" : "0.1.3",
   "name" : "KIProductName",
   "title" : "KI Product Name extension",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-10-19T20:08:40+02:00",
+  "date" : "2025-10-31T08:54:10+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {

@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration"/>
-  <version value="0.1.2"/>
+  <version value="0.1.3"/>
   <name value="RetinaIntegration"/>
   <title value="RetinaIntegration"/>
   <status value="draft"/>
-  <date value="2025-10-19T20:08:40+02:00"/>
+  <date value="2025-10-31T08:54:10+01:00"/>
   <publisher value="DIPS AS"/>
   <contact>
     <name value="DIPS AS"/>
@@ -553,6 +553,26 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fundus-foto-observation"/>
+      </reference>
+      <name value="FundusFotografiObservation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hba1c-observation"/>
+      </reference>
+      <name value="HbA1cObservation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -667,6 +687,16 @@
       </reference>
       <name value="Observation for retina screening"/>
       <description value="This is observations connected to RetinaDiagnosticReport"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/oct-observation"/>
+      </reference>
+      <name value="OCTObservation"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

@@ -1,4 +1,4 @@
-# Image Quality CodeSystem for Retinascreening - RetinaIntegration v0.1.2
+# Image Quality CodeSystem for Retinascreening - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs | *Version*:0.1.2 |
-| Active as of 2025-10-19 | *Computable Name*:RetinaImageQualityCodesystem |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs | *Version*:0.1.3 |
+| Active as of 2025-10-31 | *Computable Name*:RetinaImageQualityCodesystem |
 
  
 Image quality as interpreted by an AI solution. 
@@ -27,12 +27,12 @@ Image quality as interpreted by an AI solution.
   "resourceType" : "CodeSystem",
   "id" : "retina-imagequality-cs",
   "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs",
-  "version" : "0.1.2",
+  "version" : "0.1.3",
   "name" : "RetinaImageQualityCodesystem",
   "title" : "Image Quality CodeSystem for Retinascreening",
   "status" : "active",
   "experimental" : true,
-  "date" : "2025-10-19T20:08:40+02:00",
+  "date" : "2025-10-31T08:54:10+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Titaksstaus forrige undersøkelse Retina - RetinaIntegration v0.1.2
+# Titaksstaus forrige undersøkelse Retina - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/tiltaksstatus-forrige-undersokelse-extension | *Version*:0.1.2 |
-| Active as of 2025-10-19 | *Computable Name*:RetinaTiltaksstausForrigeUndersokelseExtension |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/tiltaksstatus-forrige-undersokelse-extension | *Version*:0.1.3 |
+| Active as of 2025-10-31 | *Computable Name*:RetinaTiltaksstausForrigeUndersokelseExtension |
 
 Angir om et tiltak er primært eller sekundært
 
@@ -20,7 +20,7 @@ Angir om et tiltak er primært eller sekundært
 **Usages:**
 
 * Use this Extension: [DiagnosticReport for Retinascreening](StructureDefinition-RetinaDiagnosticReport.md)
-* Examples for this Extension: [Bundle/BundleWithSingleExaminationAndAI-Example](Bundle-BundleWithSingleExaminationAndAI-Example.md)
+* Examples for this Extension: [Bundle/BundleWithSinglExamination-Example](Bundle-BundleWithSinglExamination-Example.md), [Bundle/BundleWithSingleExaminationAndAI-Example](Bundle-BundleWithSingleExaminationAndAI-Example.md), [Bundle/BundleWithTwoExaminations-Example](Bundle-BundleWithTwoExaminations-Example.md) and [DiagnosticReport/bb2690e7-ca9f-4070-9c35-c7e36976b144](DiagnosticReport-bb2690e7-ca9f-4070-9c35-c7e36976b144.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/dips.fhir.retinaintegration|current/StructureDefinition/tiltaksstatus-forrige-undersokelse-extension)
 
@@ -45,12 +45,12 @@ Other representations of profile: [CSV](StructureDefinition-tiltaksstatus-forrig
   "resourceType" : "StructureDefinition",
   "id" : "tiltaksstatus-forrige-undersokelse-extension",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/tiltaksstatus-forrige-undersokelse-extension",
-  "version" : "0.1.2",
+  "version" : "0.1.3",
   "name" : "RetinaTiltaksstausForrigeUndersokelseExtension",
   "title" : "Titaksstaus forrige undersøkelse Retina",
   "status" : "active",
   "experimental" : true,
-  "date" : "2025-10-19T20:08:40+02:00",
+  "date" : "2025-10-31T08:54:10+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# KI protokoll - RetinaIntegration v0.1.2
+# KI protokoll - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-protokoll-extension | *Version*:0.1.2 |
-| Draft as of 2025-10-19 | *Computable Name*:KIProtokoll |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-protokoll-extension | *Version*:0.1.3 |
+| Draft as of 2025-10-31 | *Computable Name*:KIProtokoll |
 
 **Context of Use**
 
@@ -41,12 +41,12 @@ Other representations of profile: [CSV](StructureDefinition-ki-protokoll-extensi
   "resourceType" : "StructureDefinition",
   "id" : "ki-protokoll-extension",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/ki-protokoll-extension",
-  "version" : "0.1.2",
+  "version" : "0.1.3",
   "name" : "KIProtokoll",
   "title" : "KI protokoll",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-10-19T20:08:40+02:00",
+  "date" : "2025-10-31T08:54:10+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {

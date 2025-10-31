@@ -1,4 +1,4 @@
-# dips.fhir.retinaintegration#0.1.2: RetinaIntegration
+# dips.fhir.retinaintegration#0.1.3: RetinaIntegration
 
 ## Pages
 
@@ -27,6 +27,9 @@
 
 * [DiagnosticReport for Retinascreening](StructureDefinition-RetinaDiagnosticReport.md)
 * [Observation for retina screening](StructureDefinition-RetinaObservation.md)
+* [FundusFotografiObservation](StructureDefinition-fundus-foto-observation.md)
+* [HbA1cObservation](StructureDefinition-hba1c-observation.md)
+* [OCTObservation](StructureDefinition-oct-observation.md)
 
 ### Extensions
 

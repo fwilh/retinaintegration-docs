@@ -1,4 +1,4 @@
-# Home - RetinaIntegration v0.1.2
+# Home - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration | *Version*:0.1.2 |
-| Draft as of 2025-10-19 | *Computable Name*:RetinaIntegration |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration | *Version*:0.1.3 |
+| Draft as of 2025-10-31 | *Computable Name*:RetinaIntegration |
 
 # RetinaIntegration
 
@@ -52,11 +52,11 @@ Add ai result to an examination using the following operation:
   "resourceType" : "ImplementationGuide",
   "id" : "dips.fhir.retinaintegration",
   "url" : "http://dips.no/fhir/RetinaIntegration/ImplementationGuide/dips.fhir.retinaintegration",
-  "version" : "0.1.2",
+  "version" : "0.1.3",
   "name" : "RetinaIntegration",
   "title" : "RetinaIntegration",
   "status" : "draft",
-  "date" : "2025-10-19T20:08:40+02:00",
+  "date" : "2025-10-31T08:54:10+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -902,6 +902,32 @@ Add ai result to an examination using the following operation:
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/fundus-foto-observation"
+        },
+        "name" : "FundusFotografiObservation",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/hba1c-observation"
+        },
+        "name" : "HbA1cObservation",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:extension"
           }
         ],
@@ -1047,6 +1073,19 @@ Add ai result to an examination using the following operation:
         },
         "name" : "Observation for retina screening",
         "description" : "This is observations connected to RetinaDiagnosticReport",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/oct-observation"
+        },
+        "name" : "OCTObservation",
         "exampleBoolean" : false
       },
       {

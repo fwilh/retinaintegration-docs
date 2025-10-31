@@ -1,4 +1,4 @@
-# Rapport for Retina-screening - RetinaIntegration v0.1.2
+# Rapport for Retina-screening - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/RetinaIntegration/ValueSet/diagnosticreport-codes-vs | *Version*:0.1.2 |
-| Draft as of 2025-10-19 | *Computable Name*:DiagnosticReportCodes |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/ValueSet/diagnosticreport-codes-vs | *Version*:0.1.3 |
+| Draft as of 2025-10-31 | *Computable Name*:DiagnosticReportCodes |
 
  
 Rapporttype bildediagnsotikk fra Volven 8660 
@@ -20,7 +20,7 @@ Rapporttype bildediagnsotikk fra Volven 8660
 
 ### Logical Definition (CLD)
 
-* Include all codes defined in [`http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660`](CodeSystem-no-kodeverk-8660.md)version 📦0.1.2
+* Include all codes defined in [`http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660`](CodeSystem-no-kodeverk-8660.md)version 📦0.1.3
 
  
 
@@ -48,12 +48,12 @@ Rapporttype bildediagnsotikk fra Volven 8660
   "resourceType" : "ValueSet",
   "id" : "diagnosticreport-codes-vs",
   "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/diagnosticreport-codes-vs",
-  "version" : "0.1.2",
+  "version" : "0.1.3",
   "name" : "DiagnosticReportCodes",
   "title" : "Rapport for Retina-screening",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-10-19T20:08:40+02:00",
+  "date" : "2025-10-31T08:54:10+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="3ab9dc6f-fc60-402c-bf7c-4c0e1ccde835"/>
+  <id value="06566aea-8707-481a-9a97-f05fdf4ba6a1"/>
   <meta>
-    <lastUpdated value="2025-10-19T20:09:21.620+02:00"/>
+    <lastUpdated value="2025-10-31T08:54:10.739+01:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -15,9 +15,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-no-kodeverk-8660.html">codesystem NO Kodeverk 8660 v0.1.2 (CodeSystem)</a>
+              <a href="CodeSystem-no-kodeverk-8660.html">codesystem NO Kodeverk 8660 v0.1.3 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660|0.1.2" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660|0.1.3" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 7 concepts</p>
@@ -54,12 +54,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660&quot;, &quot;version&quot;: &quot;0.1.2&quot;, &quot;code&quot;: &quot;B&quot;, &quot;display&quot;: &quot;Bildediagnostikk&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660&quot;, &quot;version&quot;: &quot;0.1.3&quot;, &quot;code&quot;: &quot;B&quot;, &quot;display&quot;: &quot;Bildediagnostikk&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660&quot;&gt;&lt;version value=&quot;0.1.2&quot;&gt;&lt;code value=&quot;B&quot;&gt;&lt;display value=&quot;Bildediagnostikk&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660&quot;&gt;&lt;version value=&quot;0.1.3&quot;&gt;&lt;code value=&quot;B&quot;&gt;&lt;display value=&quot;Bildediagnostikk&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -75,12 +75,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660&quot;, &quot;version&quot;: &quot;0.1.2&quot;, &quot;code&quot;: &quot;B06&quot;, &quot;display&quot;: &quot;Nukleærmedisin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660&quot;, &quot;version&quot;: &quot;0.1.3&quot;, &quot;code&quot;: &quot;B06&quot;, &quot;display&quot;: &quot;Nukleærmedisin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660&quot;&gt;&lt;version value=&quot;0.1.2&quot;&gt;&lt;code value=&quot;B06&quot;&gt;&lt;display value=&quot;Nukleærmedisin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660&quot;&gt;&lt;version value=&quot;0.1.3&quot;&gt;&lt;code value=&quot;B06&quot;&gt;&lt;display value=&quot;Nukleærmedisin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -96,12 +96,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660&quot;, &quot;version&quot;: &quot;0.1.2&quot;, &quot;code&quot;: &quot;L&quot;, &quot;display&quot;: &quot;Laboratoriefag&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660&quot;, &quot;version&quot;: &quot;0.1.3&quot;, &quot;code&quot;: &quot;L&quot;, &quot;display&quot;: &quot;Laboratoriefag&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660&quot;&gt;&lt;version value=&quot;0.1.2&quot;&gt;&lt;code value=&quot;L&quot;&gt;&lt;display value=&quot;Laboratoriefag&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660&quot;&gt;&lt;version value=&quot;0.1.3&quot;&gt;&lt;code value=&quot;L&quot;&gt;&lt;display value=&quot;Laboratoriefag&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -117,12 +117,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660&quot;, &quot;version&quot;: &quot;0.1.2&quot;, &quot;code&quot;: &quot;L02&quot;, &quot;display&quot;: &quot;Transfusjonsmedisin og immunologi&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660&quot;, &quot;version&quot;: &quot;0.1.3&quot;, &quot;code&quot;: &quot;L02&quot;, &quot;display&quot;: &quot;Transfusjonsmedisin og immunologi&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660&quot;&gt;&lt;version value=&quot;0.1.2&quot;&gt;&lt;code value=&quot;L02&quot;&gt;&lt;display value=&quot;Transfusjonsmedisin og immunologi&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660&quot;&gt;&lt;version value=&quot;0.1.3&quot;&gt;&lt;code value=&quot;L02&quot;&gt;&lt;display value=&quot;Transfusjonsmedisin og immunologi&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -138,12 +138,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660&quot;, &quot;version&quot;: &quot;0.1.2&quot;, &quot;code&quot;: &quot;L03&quot;, &quot;display&quot;: &quot;Medisinsk biokjemi&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660&quot;, &quot;version&quot;: &quot;0.1.3&quot;, &quot;code&quot;: &quot;L03&quot;, &quot;display&quot;: &quot;Medisinsk biokjemi&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660&quot;&gt;&lt;version value=&quot;0.1.2&quot;&gt;&lt;code value=&quot;L03&quot;&gt;&lt;display value=&quot;Medisinsk biokjemi&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660&quot;&gt;&lt;version value=&quot;0.1.3&quot;&gt;&lt;code value=&quot;L03&quot;&gt;&lt;display value=&quot;Medisinsk biokjemi&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -159,12 +159,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660&quot;, &quot;version&quot;: &quot;0.1.2&quot;, &quot;code&quot;: &quot;L04&quot;, &quot;display&quot;: &quot;Medisinsk mikrobiologi&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660&quot;, &quot;version&quot;: &quot;0.1.3&quot;, &quot;code&quot;: &quot;L04&quot;, &quot;display&quot;: &quot;Medisinsk mikrobiologi&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660&quot;&gt;&lt;version value=&quot;0.1.2&quot;&gt;&lt;code value=&quot;L04&quot;&gt;&lt;display value=&quot;Medisinsk mikrobiologi&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660&quot;&gt;&lt;version value=&quot;0.1.3&quot;&gt;&lt;code value=&quot;L04&quot;&gt;&lt;display value=&quot;Medisinsk mikrobiologi&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -180,12 +180,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660&quot;, &quot;version&quot;: &quot;0.1.2&quot;, &quot;code&quot;: &quot;L06&quot;, &quot;display&quot;: &quot;Patologi&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660&quot;, &quot;version&quot;: &quot;0.1.3&quot;, &quot;code&quot;: &quot;L06&quot;, &quot;display&quot;: &quot;Patologi&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660&quot;&gt;&lt;version value=&quot;0.1.2&quot;&gt;&lt;code value=&quot;L06&quot;&gt;&lt;display value=&quot;Patologi&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660&quot;&gt;&lt;version value=&quot;0.1.3&quot;&gt;&lt;code value=&quot;L06&quot;&gt;&lt;display value=&quot;Patologi&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -193,15 +193,15 @@
           </div>
         </text>
         <url value="http://dips.no/fhir/RetinaIntegration/ValueSet/diagnosticreport-codes-vs"/>
-        <version value="0.1.2"/>
+        <version value="0.1.3"/>
         <name value="DiagnosticReportCodes"/>
         <title value="Rapport for Retina-screening"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-10-19T20:08:40+02:00"/>
+        <date value="2025-10-31T08:54:10+01:00"/>
         <expansion>
-          <identifier value="urn:uuid:661ec22c-965b-4332-9226-c0d031b7dcc4"/>
-          <timestamp value="2025-10-19T20:09:51+02:00"/>
+          <identifier value="urn:uuid:97341337-2115-436b-8458-5ce7ff05e6bf"/>
+          <timestamp value="2025-10-31T08:55:24+01:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -222,7 +222,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660|0.1.2"/>
+            <valueUri value="http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660|0.1.3"/>
           </parameter>
           <contains>
             <system value="http://ehelse.no/fhir/CodeSystem/no-kodeverk-8660"/>
@@ -272,9 +272,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-retina-conclusioncode-cs.html">codesystem Kodeverk for konklusjon Retina v0.1.2 (CodeSystem)</a>
+              <a href="CodeSystem-retina-conclusioncode-cs.html">codesystem Kodeverk for konklusjon Retina v0.1.3 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs|0.1.2" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs|0.1.3" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 3 concepts</p>
@@ -311,12 +311,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs&quot;, &quot;version&quot;: &quot;0.1.2&quot;, &quot;code&quot;: &quot;1001&quot;, &quot;display&quot;: &quot;Gradering ferdig&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs&quot;, &quot;version&quot;: &quot;0.1.3&quot;, &quot;code&quot;: &quot;1001&quot;, &quot;display&quot;: &quot;Gradering ferdig&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs&quot;&gt;&lt;version value=&quot;0.1.2&quot;&gt;&lt;code value=&quot;1001&quot;&gt;&lt;display value=&quot;Gradering ferdig&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs&quot;&gt;&lt;version value=&quot;0.1.3&quot;&gt;&lt;code value=&quot;1001&quot;&gt;&lt;display value=&quot;Gradering ferdig&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -332,12 +332,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs&quot;, &quot;version&quot;: &quot;0.1.2&quot;, &quot;code&quot;: &quot;1002&quot;, &quot;display&quot;: &quot;Til primærgradering&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs&quot;, &quot;version&quot;: &quot;0.1.3&quot;, &quot;code&quot;: &quot;1002&quot;, &quot;display&quot;: &quot;Til primærgradering&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs&quot;&gt;&lt;version value=&quot;0.1.2&quot;&gt;&lt;code value=&quot;1002&quot;&gt;&lt;display value=&quot;Til primærgradering&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs&quot;&gt;&lt;version value=&quot;0.1.3&quot;&gt;&lt;code value=&quot;1002&quot;&gt;&lt;display value=&quot;Til primærgradering&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -353,12 +353,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs&quot;, &quot;version&quot;: &quot;0.1.2&quot;, &quot;code&quot;: &quot;1003&quot;, &quot;display&quot;: &quot;Til sekundærgradering&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs&quot;, &quot;version&quot;: &quot;0.1.3&quot;, &quot;code&quot;: &quot;1003&quot;, &quot;display&quot;: &quot;Til sekundærgradering&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs&quot;&gt;&lt;version value=&quot;0.1.2&quot;&gt;&lt;code value=&quot;1003&quot;&gt;&lt;display value=&quot;Til sekundærgradering&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs&quot;&gt;&lt;version value=&quot;0.1.3&quot;&gt;&lt;code value=&quot;1003&quot;&gt;&lt;display value=&quot;Til sekundærgradering&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -366,15 +366,15 @@
           </div>
         </text>
         <url value="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusioncode-vs"/>
-        <version value="0.1.2"/>
+        <version value="0.1.3"/>
         <name value="RetinaConclusionCodeValueset"/>
         <title value="Conclusion Code ValueSet for Retinascreening"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-10-19T20:08:40+02:00"/>
+        <date value="2025-10-31T08:54:10+01:00"/>
         <expansion>
-          <identifier value="urn:uuid:1e35532d-9b8f-4786-aa88-c5e33a10b923"/>
-          <timestamp value="2025-10-19T20:09:51+02:00"/>
+          <identifier value="urn:uuid:957a866b-00f1-4c00-9f4f-986b048b3c62"/>
+          <timestamp value="2025-10-31T08:55:24+01:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -395,7 +395,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs|0.1.2"/>
+            <valueUri value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs|0.1.3"/>
           </parameter>
           <contains>
             <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-conclusioncode-cs"/>
@@ -425,9 +425,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-retina-imagequality-cs.html">codesystem Image Quality CodeSystem for Retinascreening v0.1.2 (CodeSystem)</a>
+              <a href="CodeSystem-retina-imagequality-cs.html">codesystem Image Quality CodeSystem for Retinascreening v0.1.3 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs|0.1.2" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs|0.1.3" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 4 concepts</p>
@@ -460,12 +460,12 @@
                 <td>Good</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs&quot;, &quot;version&quot;: &quot;0.1.2&quot;, &quot;code&quot;: &quot;2001&quot;, &quot;display&quot;: &quot;Good&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs&quot;, &quot;version&quot;: &quot;0.1.3&quot;, &quot;code&quot;: &quot;2001&quot;, &quot;display&quot;: &quot;Good&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs&quot;&gt;&lt;version value=&quot;0.1.2&quot;&gt;&lt;code value=&quot;2001&quot;&gt;&lt;display value=&quot;Good&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs&quot;&gt;&lt;version value=&quot;0.1.3&quot;&gt;&lt;code value=&quot;2001&quot;&gt;&lt;display value=&quot;Good&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -480,12 +480,12 @@
                 <td>Barely gradable</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs&quot;, &quot;version&quot;: &quot;0.1.2&quot;, &quot;code&quot;: &quot;2002&quot;, &quot;display&quot;: &quot;Barely gradable&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs&quot;, &quot;version&quot;: &quot;0.1.3&quot;, &quot;code&quot;: &quot;2002&quot;, &quot;display&quot;: &quot;Barely gradable&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs&quot;&gt;&lt;version value=&quot;0.1.2&quot;&gt;&lt;code value=&quot;2002&quot;&gt;&lt;display value=&quot;Barely gradable&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs&quot;&gt;&lt;version value=&quot;0.1.3&quot;&gt;&lt;code value=&quot;2002&quot;&gt;&lt;display value=&quot;Barely gradable&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -500,12 +500,12 @@
                 <td>Not gradable</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs&quot;, &quot;version&quot;: &quot;0.1.2&quot;, &quot;code&quot;: &quot;2003&quot;, &quot;display&quot;: &quot;Not gradable&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs&quot;, &quot;version&quot;: &quot;0.1.3&quot;, &quot;code&quot;: &quot;2003&quot;, &quot;display&quot;: &quot;Not gradable&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs&quot;&gt;&lt;version value=&quot;0.1.2&quot;&gt;&lt;code value=&quot;2003&quot;&gt;&lt;display value=&quot;Not gradable&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs&quot;&gt;&lt;version value=&quot;0.1.3&quot;&gt;&lt;code value=&quot;2003&quot;&gt;&lt;display value=&quot;Not gradable&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -520,12 +520,12 @@
                 <td>Missing</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs&quot;, &quot;version&quot;: &quot;0.1.2&quot;, &quot;code&quot;: &quot;2004&quot;, &quot;display&quot;: &quot;Missing&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs&quot;, &quot;version&quot;: &quot;0.1.3&quot;, &quot;code&quot;: &quot;2004&quot;, &quot;display&quot;: &quot;Missing&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs&quot;&gt;&lt;version value=&quot;0.1.2&quot;&gt;&lt;code value=&quot;2004&quot;&gt;&lt;display value=&quot;Missing&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs&quot;&gt;&lt;version value=&quot;0.1.3&quot;&gt;&lt;code value=&quot;2004&quot;&gt;&lt;display value=&quot;Missing&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -533,15 +533,15 @@
           </div>
         </text>
         <url value="http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imagequality-vs"/>
-        <version value="0.1.2"/>
+        <version value="0.1.3"/>
         <name value="RetinaImageQualityValueSet"/>
         <title value="Image Quality ValueSet for Retinascreening"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-10-19T20:08:40+02:00"/>
+        <date value="2025-10-31T08:54:10+01:00"/>
         <expansion>
-          <identifier value="urn:uuid:6b179a14-3ab7-4277-84ea-e0d09f66f3b1"/>
-          <timestamp value="2025-10-19T20:09:51+02:00"/>
+          <identifier value="urn:uuid:19f1a244-2ffe-49f9-80c6-007cf24d4eae"/>
+          <timestamp value="2025-10-31T08:55:24+01:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -562,7 +562,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs|0.1.2"/>
+            <valueUri value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs|0.1.3"/>
           </parameter>
           <contains>
             <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/retina-imagequality-cs"/>
@@ -597,9 +597,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-tiltakstatus-nesteundersokelse-cs.html">codesystem Verdisett for tiltaksstatus neste undersøkelse v0.1.2 (CodeSystem)</a>
+              <a href="CodeSystem-tiltakstatus-nesteundersokelse-cs.html">codesystem Verdisett for tiltaksstatus neste undersøkelse v0.1.3 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs|0.1.2" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs|0.1.3" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 3 concepts</p>
@@ -636,12 +636,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs&quot;, &quot;version&quot;: &quot;0.1.2&quot;, &quot;code&quot;: &quot;3001&quot;, &quot;display&quot;: &quot;Ny fotokontroll (primærgradering)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs&quot;, &quot;version&quot;: &quot;0.1.3&quot;, &quot;code&quot;: &quot;3001&quot;, &quot;display&quot;: &quot;Ny fotokontroll (primærgradering)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs&quot;&gt;&lt;version value=&quot;0.1.2&quot;&gt;&lt;code value=&quot;3001&quot;&gt;&lt;display value=&quot;Ny fotokontroll (primærgradering)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs&quot;&gt;&lt;version value=&quot;0.1.3&quot;&gt;&lt;code value=&quot;3001&quot;&gt;&lt;display value=&quot;Ny fotokontroll (primærgradering)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -657,12 +657,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs&quot;, &quot;version&quot;: &quot;0.1.2&quot;, &quot;code&quot;: &quot;3002&quot;, &quot;display&quot;: &quot;Ny fotokontroll (sekundærgradering)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs&quot;, &quot;version&quot;: &quot;0.1.3&quot;, &quot;code&quot;: &quot;3002&quot;, &quot;display&quot;: &quot;Ny fotokontroll (sekundærgradering)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs&quot;&gt;&lt;version value=&quot;0.1.2&quot;&gt;&lt;code value=&quot;3002&quot;&gt;&lt;display value=&quot;Ny fotokontroll (sekundærgradering)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs&quot;&gt;&lt;version value=&quot;0.1.3&quot;&gt;&lt;code value=&quot;3002&quot;&gt;&lt;display value=&quot;Ny fotokontroll (sekundærgradering)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -678,12 +678,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs&quot;, &quot;version&quot;: &quot;0.1.2&quot;, &quot;code&quot;: &quot;3003&quot;, &quot;display&quot;: &quot;Ingen registrert tidligere undersøkelser&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs&quot;, &quot;version&quot;: &quot;0.1.3&quot;, &quot;code&quot;: &quot;3003&quot;, &quot;display&quot;: &quot;Ingen registrert tidligere undersøkelser&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs&quot;&gt;&lt;version value=&quot;0.1.2&quot;&gt;&lt;code value=&quot;3003&quot;&gt;&lt;display value=&quot;Ingen registrert tidligere undersøkelser&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs&quot;&gt;&lt;version value=&quot;0.1.3&quot;&gt;&lt;code value=&quot;3003&quot;&gt;&lt;display value=&quot;Ingen registrert tidligere undersøkelser&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -691,15 +691,15 @@
           </div>
         </text>
         <url value="http://dips.no/fhir/RetinaIntegration/ValueSet/tiltaksstatus-forrigeUndersokelse-vs"/>
-        <version value="0.1.2"/>
+        <version value="0.1.3"/>
         <name value="TiltaksstatusForrigeUndersokelseValueSet"/>
         <title value="Verdisett for tiltaksstatus neste undersøkelse"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-10-19T20:08:40+02:00"/>
+        <date value="2025-10-31T08:54:10+01:00"/>
         <expansion>
-          <identifier value="urn:uuid:86b15af1-9e62-4378-9f57-ded271b6fed2"/>
-          <timestamp value="2025-10-19T20:09:51+02:00"/>
+          <identifier value="urn:uuid:9d2210c3-a0c7-417e-81e4-8938cfe9e5ed"/>
+          <timestamp value="2025-10-31T08:55:25+01:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -720,7 +720,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs|0.1.2"/>
+            <valueUri value="http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs|0.1.3"/>
           </parameter>
           <contains>
             <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/tiltakstatus-nesteundersokelse-cs"/>
@@ -750,9 +750,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-videre-forlop-cs.html">codesystem Verdisett for videre forløp Retinascreening v0.1.2 (CodeSystem)</a>
+              <a href="CodeSystem-videre-forlop-cs.html">codesystem Verdisett for videre forløp Retinascreening v0.1.3 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs|0.1.2" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs|0.1.3" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 5 concepts</p>
@@ -789,12 +789,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;, &quot;version&quot;: &quot;0.1.2&quot;, &quot;code&quot;: &quot;4001&quot;, &quot;display&quot;: &quot;A&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;, &quot;version&quot;: &quot;0.1.3&quot;, &quot;code&quot;: &quot;4001&quot;, &quot;display&quot;: &quot;A&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;&gt;&lt;version value=&quot;0.1.2&quot;&gt;&lt;code value=&quot;4001&quot;&gt;&lt;display value=&quot;A&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;&gt;&lt;version value=&quot;0.1.3&quot;&gt;&lt;code value=&quot;4001&quot;&gt;&lt;display value=&quot;A&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -810,12 +810,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;, &quot;version&quot;: &quot;0.1.2&quot;, &quot;code&quot;: &quot;4002&quot;, &quot;display&quot;: &quot;B&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;, &quot;version&quot;: &quot;0.1.3&quot;, &quot;code&quot;: &quot;4002&quot;, &quot;display&quot;: &quot;B&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;&gt;&lt;version value=&quot;0.1.2&quot;&gt;&lt;code value=&quot;4002&quot;&gt;&lt;display value=&quot;B&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;&gt;&lt;version value=&quot;0.1.3&quot;&gt;&lt;code value=&quot;4002&quot;&gt;&lt;display value=&quot;B&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -831,12 +831,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;, &quot;version&quot;: &quot;0.1.2&quot;, &quot;code&quot;: &quot;4003&quot;, &quot;display&quot;: &quot;C&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;, &quot;version&quot;: &quot;0.1.3&quot;, &quot;code&quot;: &quot;4003&quot;, &quot;display&quot;: &quot;C&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;&gt;&lt;version value=&quot;0.1.2&quot;&gt;&lt;code value=&quot;4003&quot;&gt;&lt;display value=&quot;C&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;&gt;&lt;version value=&quot;0.1.3&quot;&gt;&lt;code value=&quot;4003&quot;&gt;&lt;display value=&quot;C&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -852,12 +852,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;, &quot;version&quot;: &quot;0.1.2&quot;, &quot;code&quot;: &quot;4004&quot;, &quot;display&quot;: &quot;D&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;, &quot;version&quot;: &quot;0.1.3&quot;, &quot;code&quot;: &quot;4004&quot;, &quot;display&quot;: &quot;D&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;&gt;&lt;version value=&quot;0.1.2&quot;&gt;&lt;code value=&quot;4004&quot;&gt;&lt;display value=&quot;D&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;&gt;&lt;version value=&quot;0.1.3&quot;&gt;&lt;code value=&quot;4004&quot;&gt;&lt;display value=&quot;D&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -873,12 +873,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;, &quot;version&quot;: &quot;0.1.2&quot;, &quot;code&quot;: &quot;4005&quot;, &quot;display&quot;: &quot;E&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;, &quot;version&quot;: &quot;0.1.3&quot;, &quot;code&quot;: &quot;4005&quot;, &quot;display&quot;: &quot;E&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;&gt;&lt;version value=&quot;0.1.2&quot;&gt;&lt;code value=&quot;4005&quot;&gt;&lt;display value=&quot;E&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs&quot;&gt;&lt;version value=&quot;0.1.3&quot;&gt;&lt;code value=&quot;4005&quot;&gt;&lt;display value=&quot;E&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -886,15 +886,15 @@
           </div>
         </text>
         <url value="http://dips.no/fhir/RetinaIntegration/ValueSet/videre-forlop-vs"/>
-        <version value="0.1.2"/>
+        <version value="0.1.3"/>
         <name value="VidereForlopValueSet"/>
         <title value="Verdisett for videre forløpsstudie"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-10-19T20:08:40+02:00"/>
+        <date value="2025-10-31T08:54:10+01:00"/>
         <expansion>
-          <identifier value="urn:uuid:4a35dbf1-adda-45de-aa92-7c80f85981dd"/>
-          <timestamp value="2025-10-19T20:09:51+02:00"/>
+          <identifier value="urn:uuid:8a0b473c-438f-4301-b610-7dec17c1e6e8"/>
+          <timestamp value="2025-10-31T08:55:25+01:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -915,7 +915,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs|0.1.2"/>
+            <valueUri value="http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs|0.1.3"/>
           </parameter>
           <contains>
             <system value="http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs"/>

@@ -1,4 +1,4 @@
-# Retina examination identifier NamingSystem - RetinaIntegration v0.1.2
+# Retina examination identifier NamingSystem - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/RetinaIntegration/NamingSystem/retina-examination-id | *Version*:0.1.2 |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/NamingSystem/retina-examination-id | *Version*:0.1.3 |
 | Active as of 2025-10-19 | *Computable Name*:RetinaExaminationIdentifierSystem |
 
  
@@ -19,7 +19,7 @@ A naming system for retina examination identifiers used by DIPS integration serv
 | | |
 | :--- | :--- |
 | Defining URL | http://dips.no/fhir/RetinaIntegration/NamingSystem/retina-examination-id |
-| Version | 0.1.2 |
+| Version | 0.1.3 |
 | Name | RetinaExaminationIdentifierSystem |
 | Status | active |
 | Definition | A naming system for retina examination identifiers used by DIPS integration services. |
@@ -46,7 +46,7 @@ A naming system for retina examination identifiers used by DIPS integration serv
     },
     {
       "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
-      "valueString" : "0.1.2"
+      "valueString" : "0.1.3"
     }
   ],
   "name" : "RetinaExaminationIdentifierSystem",

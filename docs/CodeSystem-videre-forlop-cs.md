@@ -1,4 +1,4 @@
-# Verdisett for videre forløp Retinascreening - RetinaIntegration v0.1.2
+# Verdisett for videre forløp Retinascreening - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs | *Version*:0.1.2 |
-| Draft as of 2025-10-19 | *Computable Name*:VidereForlopCodeSystem |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs | *Version*:0.1.3 |
+| Draft as of 2025-10-31 | *Computable Name*:VidereForlopCodeSystem |
 
  
 Verdisett som beskriver verdier for videre forløp Retinascreening 
@@ -27,12 +27,12 @@ Verdisett som beskriver verdier for videre forløp Retinascreening
   "resourceType" : "CodeSystem",
   "id" : "videre-forlop-cs",
   "url" : "http://dips.no/fhir/RetinaIntegration/CodeSystem/videre-forlop-cs",
-  "version" : "0.1.2",
+  "version" : "0.1.3",
   "name" : "VidereForlopCodeSystem",
   "title" : "Verdisett for videre forløp Retinascreening",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-10-19T20:08:40+02:00",
+  "date" : "2025-10-31T08:54:10+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {

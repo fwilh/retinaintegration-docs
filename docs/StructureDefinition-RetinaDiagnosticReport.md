@@ -1,4 +1,4 @@
-# DiagnosticReport for Retinascreening - RetinaIntegration v0.1.2
+# DiagnosticReport for Retinascreening - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport | *Version*:0.1.2 |
-| Draft as of 2025-10-19 | *Computable Name*:DIPSRetinaIntegrationDiagnosticReport |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport | *Version*:0.1.3 |
+| Draft as of 2025-10-31 | *Computable Name*:DIPSRetinaIntegrationDiagnosticReport |
 
  
 This report contains the results from a retina screening examination. 
@@ -20,7 +20,7 @@ The purpose of RetinaIntegrationDiagnosticReport is to standardize the reporting
 **Usages:**
 
 * Examples for this Profile: [DiagnosticReport/bb2690e7-ca9f-4070-9c35-c7e36976b144](DiagnosticReport-bb2690e7-ca9f-4070-9c35-c7e36976b144.md)
-* CapabilityStatements using this Profile: [CapabilityStatement[http://dips.no/fhir/RetinaIntegration/CapabilityStatement/DIPSRetinaCapabilityStatement|0.1.2]](CapabilityStatement-DIPSRetinaCapabilityStatement.md)
+* CapabilityStatements using this Profile: [CapabilityStatement[http://dips.no/fhir/RetinaIntegration/CapabilityStatement/DIPSRetinaCapabilityStatement|0.1.3]](CapabilityStatement-DIPSRetinaCapabilityStatement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/dips.fhir.retinaintegration|current/StructureDefinition/RetinaDiagnosticReport)
 
@@ -41,12 +41,12 @@ Other representations of profile: [CSV](StructureDefinition-RetinaDiagnosticRepo
   "resourceType" : "StructureDefinition",
   "id" : "RetinaDiagnosticReport",
   "url" : "http://dips.no/fhir/RetinaIntegration/StructureDefinition/RetinaDiagnosticReport",
-  "version" : "0.1.2",
+  "version" : "0.1.3",
   "name" : "DIPSRetinaIntegrationDiagnosticReport",
   "title" : "DiagnosticReport for Retinascreening",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-10-19T20:08:40+02:00",
+  "date" : "2025-10-31T08:54:10+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {
@@ -111,7 +111,8 @@ Other representations of profile: [CSV](StructureDefinition-RetinaDiagnosticRepo
           ],
           "ordered" : false,
           "rules" : "open"
-        }
+        },
+        "min" : 1
       },
       {
         "id" : "DiagnosticReport.extension:retinaImageQualityExtension",
@@ -207,7 +208,7 @@ Other representations of profile: [CSV](StructureDefinition-RetinaDiagnosticRepo
         "id" : "DiagnosticReport.extension:forrigeUndersokelse",
         "path" : "DiagnosticReport.extension",
         "sliceName" : "forrigeUndersokelse",
-        "min" : 0,
+        "min" : 1,
         "max" : "1",
         "type" : [
           {
@@ -271,6 +272,76 @@ Other representations of profile: [CSV](StructureDefinition-RetinaDiagnosticRepo
           "strength" : "required",
           "valueSet" : "http://dips.no/fhir/RetinaIntegration/ValueSet/diagnosticreport-codes-vs"
         }
+      },
+      {
+        "id" : "DiagnosticReport.result",
+        "path" : "DiagnosticReport.result",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "profile",
+              "path" : "resolve()"
+            }
+          ],
+          "rules" : "open"
+        }
+      },
+      {
+        "id" : "DiagnosticReport.result:fundusFotografiObservation",
+        "path" : "DiagnosticReport.result",
+        "sliceName" : "fundusFotografiObservation",
+        "short" : "Optional Fundus Photography Observation",
+        "definition" : "An optional observation indicating that fundus photography was performed. This observation documents the execution of fundus photography as part of the retina screening examination and serves as a reference point for tracking which imaging procedures were completed during the examination.",
+        "comment" : "This slice is used to explicitly document when fundus photography has been performed during a retina screening examination. The observation should use the code CKDP10 from the Norwegian code system.",
+        "requirements" : "Used to track and document the completion of fundus photography procedures within the retina screening workflow, enabling proper audit trails and procedural documentation.",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "http://dips.no/fhir/RetinaIntegration/StructureDefinition/fundus-foto-observation"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "DiagnosticReport.result:octObservation",
+        "path" : "DiagnosticReport.result",
+        "sliceName" : "octObservation",
+        "short" : "Optional OCT Observation",
+        "definition" : "An optional observation indicating that Optical Coherence Tomography (OCT) was performed. This observation documents the execution of OCT imaging as part of the retina screening examination and serves as a reference point for tracking which imaging procedures were completed during the examination.",
+        "comment" : "This slice is used to explicitly document when OCT has been performed during a retina screening examination. The observation should use the code CKFX16 from the Norwegian code system.",
+        "requirements" : "Used to track and document the completion of OCT procedures within the retina screening workflow, enabling proper audit trails and procedural documentation for light wave-based eye fundus structure examination.",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "http://dips.no/fhir/RetinaIntegration/StructureDefinition/oct-observation"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "DiagnosticReport.result:hbA1cObservation",
+        "path" : "DiagnosticReport.result",
+        "sliceName" : "hbA1cObservation",
+        "short" : "Optional HbA1c Laboratory Result",
+        "definition" : "An optional observation containing HbA1c laboratory results. This observation provides important context for diabetic retinopathy assessment by documenting the patient's glycemic control status at the time of retinal examination.",
+        "comment" : "This slice is used to include HbA1c laboratory values that provide clinical context for retinal screening. The observation should use the SNOMED CT code 167491000202108 for HbA1c.",
+        "requirements" : "HbA1c values provide essential clinical context for interpreting retinal screening results and determining appropriate follow-up intervals in diabetic retinopathy management.",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "http://dips.no/fhir/RetinaIntegration/StructureDefinition/hba1c-observation"
+            ]
+          }
+        ]
       },
       {
         "id" : "DiagnosticReport.conclusionCode",

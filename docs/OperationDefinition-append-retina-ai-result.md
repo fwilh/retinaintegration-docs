@@ -1,4 +1,4 @@
-# DIPSRetinaAppendOperationDefinition - RetinaIntegration v0.1.2
+# DIPSRetinaAppendOperationDefinition - RetinaIntegration v0.1.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result | *Version*:0.1.2 |
-| Active as of 2025-10-19 | *Computable Name*:AppendRetinaAIResult |
+| *Official URL*:http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result | *Version*:0.1.3 |
+| Active as of 2025-10-31 | *Computable Name*:AppendRetinaAIResult |
 
  
 OperationDefinition for appending retina AI results to existing DiagnosticReport 
@@ -115,11 +115,11 @@ URL: [base]/DiagnosticReport/[id]/$append-retina-ai-result
   "resourceType" : "OperationDefinition",
   "id" : "append-retina-ai-result",
   "url" : "http://dips.no/fhir/RetinaIntegration/OperationDefinition/append-retina-ai-result",
-  "version" : "0.1.2",
+  "version" : "0.1.3",
   "name" : "AppendRetinaAIResult",
   "status" : "active",
   "kind" : "operation",
-  "date" : "2025-10-19T20:08:40+02:00",
+  "date" : "2025-10-31T08:54:10+01:00",
   "publisher" : "DIPS AS",
   "contact" : [
     {

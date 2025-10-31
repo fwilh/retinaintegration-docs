@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/diagnosticreport-codes-vs",
-      "version" : "0.1.2",
+      "version" : "0.1.3",
       "status" : "draft",
       "name" : "DiagnosticReportCodes",
       "title" : "Rapport for Retina-screening",
@@ -14,7 +14,7 @@
     },
     {
       "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-conclusioncode-vs",
-      "version" : "0.1.2",
+      "version" : "0.1.3",
       "status" : "draft",
       "name" : "RetinaConclusionCodeValueset",
       "title" : "Conclusion Code ValueSet for Retinascreening",
@@ -28,7 +28,7 @@
     },
     {
       "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/retina-imagequality-vs",
-      "version" : "0.1.2",
+      "version" : "0.1.3",
       "status" : "draft",
       "name" : "RetinaImageQualityValueSet",
       "title" : "Image Quality ValueSet for Retinascreening",
@@ -42,7 +42,7 @@
     },
     {
       "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/tiltaksstatus-forrigeUndersokelse-vs",
-      "version" : "0.1.2",
+      "version" : "0.1.3",
       "status" : "draft",
       "name" : "TiltaksstatusForrigeUndersokelseValueSet",
       "title" : "Verdisett for tiltaksstatus neste undersøkelse",
@@ -56,7 +56,7 @@
     },
     {
       "url" : "http://dips.no/fhir/RetinaIntegration/ValueSet/videre-forlop-vs",
-      "version" : "0.1.2",
+      "version" : "0.1.3",
       "status" : "draft",
       "name" : "VidereForlopValueSet",
       "title" : "Verdisett for videre forløpsstudie",
@@ -80,7 +80,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-RetinaObservation.html" : "Observation for retina screening"
+      "StructureDefinition-fundus-foto-observation.html" : "FundusFotografiObservation",
+      "StructureDefinition-RetinaObservation.html" : "Observation for retina screening",
+      "StructureDefinition-hba1c-observation.html" : "HbA1cObservation",
+      "StructureDefinition-oct-observation.html" : "OCTObservation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
@@ -94,7 +97,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-RetinaObservation.html" : "Observation for retina screening"
+      "StructureDefinition-fundus-foto-observation.html" : "FundusFotografiObservation",
+      "StructureDefinition-RetinaObservation.html" : "Observation for retina screening",
+      "StructureDefinition-hba1c-observation.html" : "HbA1cObservation",
+      "StructureDefinition-oct-observation.html" : "OCTObservation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/diagnostic-report-status",
@@ -164,7 +170,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
+      "StructureDefinition-fundus-foto-observation.html" : "FundusFotografiObservation",
       "StructureDefinition-RetinaObservation.html" : "Observation for retina screening",
+      "StructureDefinition-hba1c-observation.html" : "HbA1cObservation",
+      "StructureDefinition-oct-observation.html" : "OCTObservation",
       "StructureDefinition-RetinaDiagnosticReport.html" : "DiagnosticReport for Retinascreening"
     },
     {
@@ -179,7 +188,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.403"],
       "uses" : {
       },
-      "StructureDefinition-RetinaObservation.html" : "Observation for retina screening"
+      "StructureDefinition-fundus-foto-observation.html" : "FundusFotografiObservation",
+      "StructureDefinition-RetinaObservation.html" : "Observation for retina screening",
+      "StructureDefinition-hba1c-observation.html" : "HbA1cObservation",
+      "StructureDefinition-oct-observation.html" : "OCTObservation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -193,7 +205,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.396"],
       "uses" : {
       },
-      "StructureDefinition-RetinaObservation.html" : "Observation for retina screening"
+      "StructureDefinition-fundus-foto-observation.html" : "FundusFotografiObservation",
+      "StructureDefinition-RetinaObservation.html" : "Observation for retina screening",
+      "StructureDefinition-hba1c-observation.html" : "HbA1cObservation",
+      "StructureDefinition-oct-observation.html" : "OCTObservation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -209,7 +224,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
-      "StructureDefinition-RetinaObservation.html" : "Observation for retina screening"
+      "StructureDefinition-fundus-foto-observation.html" : "FundusFotografiObservation",
+      "StructureDefinition-RetinaObservation.html" : "Observation for retina screening",
+      "StructureDefinition-hba1c-observation.html" : "HbA1cObservation",
+      "StructureDefinition-oct-observation.html" : "OCTObservation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -223,7 +241,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
-      "StructureDefinition-RetinaObservation.html" : "Observation for retina screening"
+      "StructureDefinition-fundus-foto-observation.html" : "FundusFotografiObservation",
+      "StructureDefinition-RetinaObservation.html" : "Observation for retina screening",
+      "StructureDefinition-hba1c-observation.html" : "HbA1cObservation",
+      "StructureDefinition-oct-observation.html" : "OCTObservation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -237,7 +258,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
-      "StructureDefinition-RetinaObservation.html" : "Observation for retina screening"
+      "StructureDefinition-fundus-foto-observation.html" : "FundusFotografiObservation",
+      "StructureDefinition-RetinaObservation.html" : "Observation for retina screening",
+      "StructureDefinition-hba1c-observation.html" : "HbA1cObservation",
+      "StructureDefinition-oct-observation.html" : "OCTObservation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
@@ -254,7 +278,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
-      "StructureDefinition-RetinaObservation.html" : "Observation for retina screening"
+      "StructureDefinition-fundus-foto-observation.html" : "FundusFotografiObservation",
+      "StructureDefinition-RetinaObservation.html" : "Observation for retina screening",
+      "StructureDefinition-hba1c-observation.html" : "HbA1cObservation",
+      "StructureDefinition-oct-observation.html" : "OCTObservation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -270,7 +297,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
-      "StructureDefinition-RetinaObservation.html" : "Observation for retina screening"
+      "StructureDefinition-fundus-foto-observation.html" : "FundusFotografiObservation",
+      "StructureDefinition-RetinaObservation.html" : "Observation for retina screening",
+      "StructureDefinition-hba1c-observation.html" : "HbA1cObservation",
+      "StructureDefinition-oct-observation.html" : "OCTObservation"
     }
   ]
 }
