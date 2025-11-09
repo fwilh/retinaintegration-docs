@@ -2,8 +2,6 @@
 layout: home
 ---
 
-# Welcome
+DIPS RetinaIntegration IG has moved. 
 
-This site has moved. Please visit our new location:
-
-[DIPS RetinaIntegration IG](https://dipsas.github.io/DIPS-RetinaIntegration-IG/)
+Please visit our new location: [https://dipsas.github.io/DIPS-RetinaIntegration-IG/](https://dipsas.github.io/DIPS-RetinaIntegration-IG/)
